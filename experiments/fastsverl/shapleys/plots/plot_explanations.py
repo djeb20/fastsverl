@@ -163,5 +163,5 @@ for explanation, run_names in explanations.items():
 
             # Save the figure
             os.makedirs(f'mastermind_explanations/{explanation.lower()}/{env_args.code_size}{env_args.num_guesses}{env_args.num_pegs}', exist_ok=True)
-            plt.savefig(f'mastermind_explanations/{explanation.lower()}/{env_args.code_size}{env_args.num_guesses}{env_args.num_pegs}/mastermind_state-{state_idx}.pdf', bbox_inches='tight', transparent=True)
+            plt.savefig(f'mastermind_explanations/{explanation.lower()}/{env_args.code_size}{env_args.num_guesses}{env_args.num_pegs}/mastermind_state-{state_idx}.png', bbox_inches='tight', transparent=True)
             plt.close(fig)

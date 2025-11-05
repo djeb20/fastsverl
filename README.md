@@ -87,6 +87,17 @@ Most experiments follow a multi-stage pipeline, typically:
 
 **Important Note:** The experiment scripts often launch multiple subprocesses by calling a run script (e.g., `run.py`, `run_policy_prediction.py`, `run_performance.py`). These subprocesses handle the individual training runs.
 
+### A Note on the 'with_exact_char' Parameter
+
+Many experiment scripts include a boolean parameter named `with_exact_char`. It is critical to understand what this parameter does, as it can be counter-intuitive.
+
+This parameter **does not** change how the Shapley models are trained. In all experiments, the Shapley models are **always trained using the *approximate* characteristic models** as input.
+
+The `with_exact_char` parameter **only** changes the *ground-truth target* used to compute the "exact loss" for evaluation:
+
+* **`with_exact_char = True`:** The model's predictions are compared against ground-truth Shapley values that were computed using the **exact** characteristic function. This measures how well the model approximates the *true* Shapley values for the environment. This setting often results in a higher reported exact loss, as the loss captures both the Shapley model's approximation error *and* the error propagated from the approximate characteristic model it was trained on.
+* **`with_exact_char = False`:** The model's predictions are compared against ground-truth Shapley values that were computed using the **approximate** characteristic function (the same one used to train the Shapley model). This measures how well the Shapley model *learned to approximate the values of its characteristic model*.
+
 ### Concrete Example: Behaviour Shapley Models in Mastermind
 
 To replicate the experiment for training behaviour Shapley models for a DQN agent in Mastermind, follow these steps. These scripts train models across the different Mastermind environment sizes used in the paper.
@@ -119,6 +130,8 @@ All experiments include corresponding plotting scripts to reproduce the figures 
 For a detailed view of the qualitative results (e.g. behaviour, outcome, and prediction explanations for states in the Mastermind domains), please see the separate README located at:
 `experiments/fastsverl/README.md`
 
+**Note:** The results visualised in that README focus on the **off-policy outcome explanations**. The corresponding **on-policy** outcome explanations are included as files in the same directory but are not presented in the markdown. This is because the on-policy explanations were found to be erratic, suggesting potential instability as the domains scale. Investigating this is an important avenue for future work.
+
 ## Using FastSVERL for Your Own Research
 
 You can easily adapt FastSVERL to new environments and agents.
@@ -132,10 +145,14 @@ You can easily adapt FastSVERL to new environments and agents.
     ```
 
 2.  **Custom Agents:**
-    Follow the agent structure (e.g. DQN, PPO) in `fastsverl/fastsverl/`. You can use the existing agents on your new environment or implement your own.
+    Our agent implementations (DQN, PPO) and training loops are based on [CleanRL](https://docs.cleanrl.dev/) library. To implement your own, follow the agent structure in `fastsverl/fastsverl/`. You can use the existing agents on your new environment or implement your own following this structure.
 
 3.  **Custom Experiments:**
     Adapt the scripts in the `experiments/` directory to create your own training pipelines. For example, you can base your work on the agent -> characteristic -> Shapley model pipeline to generate explanations for your new components.
+
+## Acknowledgments
+
+This repository builds heavily on the agent implementations and training structures from [CleanRL](https://docs.cleanrl.dev/). We are grateful to the authors and contributors of that library for their high-quality, easy-to-follow code.
 
 ## Contributing and Support
 

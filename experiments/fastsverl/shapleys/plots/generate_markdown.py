@@ -1,159 +1,46 @@
-from dataclasses import dataclass
-import json
 import os
-import pickle
-import numpy as np
-import matplotlib.pyplot as plt
-import matplotlib.colors as mcolors
-import torch
+import glob # Used to find image files
 
-from fastsverl.training import setup_envs
-from fastsverl.utils import AgentArgs, EnvArgs
-from fastsverl.envs.mastermind import Mastermind
-from fastsverl.dqn import DQN
-
-@dataclass
-class ExpArgs:
-    agent_args_f: str = None
-    "where to load the agent's and the environment's hyperparameters from"
-
-    # group: str = f"{os.path.basename(os.path.dirname(__file__))}_{os.path.basename(__file__)[: -len('.py')]}_{int(time.time())}"
-    # """the group of this experiment"""
-    num_runs: int = 1 # 20
-    """the number of times to run the experiment"""
-    torch_deterministic: bool = True
-    """if toggled, `torch.backends.cudnn.deterministic=False`"""
-    cuda: bool = True
-    """if toggled, cuda will be enabled by default"""
-    track: bool = False
-    """if toggled, this experiment will be tracked with Weights and Biases"""
-    wandb_project_name: str = "FastSVERL_Mastermind"
-    """the wandb's project name"""
-    wandb_entity: str = None
-    """the entity (team) of wandb's project"""
-    capture_video: bool = False
-    """whether to capture videos of the agent performances (check out `videos` folder)"""
-    env_id: str = "Mastermind-v0"
-    """the id of the environment"""
-    num_envs: int = 16
-    """the number of parallel game environments"""
-
-exp_args = ExpArgs()
-
-# --- 1. CONFIGURATION: Adjust these paths and settings ---
-
-# Path to the directory where agent/explanation run data is stored
-RUNS_DIR = "../runs/"
-AGENTS_DIR = "../../agents/runs/"
+# Path to the README.md file
 OUTPUT_FILENAME = "../../README.md"
 
-# This structure maps your domains to the specific run IDs needed.
-# You'll need to fill this out with your actual run/folder names.
+# 1. Path to images RELATIVE TO THE README.md FILE
+# This is used to build the <img> src tag
+HTML_IMG_BASE_PATH = "shapleys/plots/mastermind_explanations" 
+
+# 2. Path to images RELATIVE TO THIS SCRIPT
+# This is used for os.path.exists() and glob.glob() checks
+# It's calculated automatically
+README_DIR = os.path.dirname(OUTPUT_FILENAME) # Gets "../../"
+SCRIPT_IMG_BASE_PATH = os.path.join(README_DIR, HTML_IMG_BASE_PATH) # Gets "../../shapleys/plots/mastermind_explanations"
+
+# Extension of your image files.
+IMG_EXTENSION = ".png" 
+
+# Maps the explanation names in DOMAIN_CONFIG to your image sub-directory names
+IMG_DIR_MAP = {
+    "Behaviour": "behaviour",
+    "Performance": "offpolicy_performance",
+    "Performance (On-Policy)": "onpolicy_performance",
+    "Prediction": "prediction"
+}
+
+# Simplified domain configuration
+# The script will auto-detect the number of states for each domain
+# by counting images in the "Behaviour" sub-directory.
 DOMAIN_CONFIG = {
     "Mastermind-443": {
-        "agent_run_id": "1_1753520362364993335", # Agent for 443
-        "explanations": {
-            "Behaviour": "1_1754327171814823512",
-            # "Performance (On-Policy)": "1_1757851984212157174",
-            "Performance": "1_1757852311860287719",
-            "Prediction": "1_1757524448855916224",
-        }
+        "explanation_names": ["Behaviour", "Performance", "Prediction"]
     },
     "Mastermind-453": {
-        "agent_run_id": "1_1753520364367597552", # Agent for 453
-        "explanations": {
-            "Behaviour": "1_1754327664370701736",
-            # "Performance (On-Policy)": "1_1757852799250560205",
-            "Performance": "1_1757853130928613104",
-            "Prediction": "1_1757527102146519022",
-        }
+        "explanation_names": ["Behaviour", "Performance", "Prediction"]
     },
     "Mastermind-463": {
-        "agent_run_id": "1_1753520366370971122", # Agent for 463
-        "explanations": {
-            "Behaviour": "1_1754328163819393596",
-            # "Performance (On-Policy)": "1_1757853893495242171",
-            "Performance": "1_1757854221711682627",
-            "Prediction": "1_1757529730632057966",
-        }
+        "explanation_names": ["Behaviour", "Performance", "Prediction"]
     },
 }
 
-# --- 2. HELPER FUNCTIONS ---
-
-MOVE_DICT = {-1: ' ', 1: 'A', 2: 'B', 3: 'C'}
-TEXT_COLORS = ("black", "white") # For light and dark backgrounds respectively
-ACTION_TEXT_COLOR = "#1C8C34" # Green for the chosen action
-
-def load_sv_data(run_id):
-    """Loads Shapley value dictionary from a pickle file."""
-    path = os.path.join(RUNS_DIR, run_id, "train_svs.pkl")
-    with open(path, 'rb') as f:
-        return pickle.load(f)
-
-def get_color_from_gradient(value):
-    """Maps a Shapley value from [-1, 1] to a hex color string."""
-    if not np.isfinite(value): return "#FFFFFF" # Handle NaNs
-    norm = mcolors.Normalize(vmin=-1, vmax=1)
-    cmap = plt.cm.RdBu # Red-White-Blue colormap
-    rgba_color = cmap(norm(value))
-    return mcolors.to_hex(rgba_color)
-
-def format_state(state_array, env_args):
-    """Converts a raw state array into a human-readable 2D grid."""
-    grid = np.flipud(np.reshape(state_array, (env_args.num_guesses, env_args.code_size + 2))).astype(object)
-    grid[:, 1:-1] = np.reshape([MOVE_DICT[i] for i in grid[:, 1:-1].flatten()], (env_args.num_guesses, env_args.code_size))
-    grid[:, 0] = [' ' if v == -1 else int(v) for v in grid[:, 0]]
-    grid[:, -1] = [' ' if v == -1 else int(v) for v in grid[:, -1]]
-    return grid
-
-def generate_board_html(state_grid, sv_grid, action_info=None):
-    """Generates the HTML for a single colored Mastermind board."""
-    html = '<table style="font-family: monospace; text-align: center; border-collapse: collapse;">'
-    
-    # Header Row
-    html += '<tr>'
-    headers = ["Clue 1"] + [f"Pos {i+1}" for i in range(state_grid.shape[1] - 2)] + ["Clue 2"]
-    for h in headers:
-        html += f'<th style="padding: 4px; border: 1px solid #ccc;">{h}</th>'
-    html += '</tr>'
-    
-    # Data Rows
-    for i, row in enumerate(state_grid):
-        # guess_num = state_grid.shape[0] - i
-        html += '<tr>'
-        for j, cell_text in enumerate(row):
-            sv = sv_grid[i, j]
-            bg_color = get_color_from_gradient(sv)
-            
-            # Determine text color for contrast
-            text_color = TEXT_COLORS[int(abs(sv) > 0.5)]
-            
-            # --- CHANGES ARE HERE ---
-            # is_action_row = False
-            is_action_row = action_info is not None and state_grid.shape[0] - i - 1 == action_info['guess_idx']
-
-            # If this is the action row, override the text with the action letters
-            if is_action_row and 1 <= j < state_grid.shape[1] - 1:
-
-                display_text = action_info['letters'][j - 1]
-                text_color = ACTION_TEXT_COLOR
-            
-            # Use a non-breaking space for empty cells to ensure consistent row height
-            elif str(cell_text).strip() == '':
-                display_text = '&nbsp;'
-
-            else:
-                display_text = cell_text
-
-            style = f'background-color: {bg_color}; color: {text_color}; padding: 4px; border: 1px solid #ccc; font-weight: bold;'
-            html += f'<td style="{style}">{display_text}</td>'
-        html += '</tr>'
-        
-    html += '</table>'
-    return html
-
-# --- 3. MAIN SCRIPT LOGIC ---
+# --- 2. MAIN SCRIPT LOGIC ---
 
 intro_text = """
 # FastSVERL Explanations for Mastermind
@@ -164,7 +51,7 @@ Mastermind is a code-breaking game where, in these versions, an agent must guess
 
 ## How to Read the Visualisations
 
-For each state, three explanation types are shown side-by-side: *Behaviour*, *Performance*, and *Prediction*. The colour of each cell on the board represents its relative Shapley value, which indicates the feature's contribution to the explanation type.
+For each state, three explanation types are shown side-by-side: *Behaviour*, *Performance*, and *Prediction*. The colour of each cell on the board represents its relative Shapley value, which indicates the feature's contribution to the explanation type. **For clarity, the Shapley values in all figures are normalised to sit between -1 and 1.**
 
 * *Blue* cells indicate a *positive* contribution.
 * *Red* cells indicate a *negative* contribution.
@@ -173,11 +60,15 @@ For each state, three explanation types are shown side-by-side: *Behaviour*, *Pe
 
 Full details of the FastSVERL methodology are available in the main paper.
 
+### A Note on On-Policy Explanations
+
+Figures for the *on-policy outcome explanations* are not presented in this README, though they are stored in the image folders. We have omitted them because the on-policy explanations were found to be erratic, suggesting potential instability as the domains scale. Investigating this is an important avenue for future work.
+
 ## Navigating This Document
 
 This document is organised by domain size. A table of contents at the top provides direct links to each domain section. Within each section, a grid of links allows you to jump to a specific state.
 
-Please note that the state indices are for navigational purposes only and do not represent a sequential trajectory. The states presented are representative of those encountered by an optimal policy in each domain.
+Please note that the state indices are for navigational purposes only and do not represent a sequential trajectory. The states presented are representative of those encountered by an approximately optimal policy in each domain.
 """
 
 def main():
@@ -196,26 +87,35 @@ def main():
         domain_anchor = domain_name.lower().replace(" ", "-")
         md_content.append(f"\n<br>\n\n---\n## {domain_name}")
 
-        # --- Load Agent and Env Config for this domain ---
-        with open(os.path.join(AGENTS_DIR, config['agent_run_id'], "EnvArgs.json"), "r") as f:
-            env_args = EnvArgs(**json.load(f))
-        with open(os.path.join(AGENTS_DIR, config['agent_run_id'], "AgentArgs.json"), "r") as f:
-            agent_args = AgentArgs(**json.load(f))
-        exp_args.agent_args_f = config['agent_run_id']
-        
-        envs = setup_envs(env_args, exp_args, 0, run_name=None, save_parameters=False, **vars(env_args))
-        agent = DQN(envs, agent_args)
-        agent.load_models(os.path.join(AGENTS_DIR, config['agent_run_id']), eval=True, epsilon=True)
-        
-        # --- Load all explanation data for this domain ---
-        explanation_data = {name: load_sv_data(run_id) for name, run_id in config['explanations'].items()}
-        
-        # Use the first explanation's keys to define the state order
-        state_keys = list(explanation_data["Behaviour"].keys())
+        # Get the short domain name (e.g., "443" from "Mastermind-443")
+        domain_short = domain_name.split('-')[-1]
 
-        # --- Create State-Level ToC Grid (New Table-based version) ---
+        # --- Auto-detect number of states by counting image files ---
+        # We assume the 'Behaviour' directory exists and has the images.
+        behaviour_img_dir = IMG_DIR_MAP["Behaviour"]
+        
+        # USE THE SCRIPT-RELATIVE PATH for file system checks
+        domain_img_path = os.path.join(SCRIPT_IMG_BASE_PATH, behaviour_img_dir, domain_short)
+        
+        # Find all images matching the pattern (e.g., "mastermind_state-*.png")
+        try:
+            image_files = glob.glob(os.path.join(domain_img_path, f"mastermind_state-*{IMG_EXTENSION}"))
+            num_states = len(image_files)
+            
+            if num_states == 0:
+                print(f"   - WARNING: No images found in {domain_img_path} with extension {IMG_EXTENSION}.")
+                print(f"   - Skipping domain {domain_name}.")
+                continue
+        except FileNotFoundError: # This might not be strictly necessary with glob, but good practice
+            print(f"   - ERROR: Directory not found: {domain_img_path}")
+            print(f"   - Skipping domain {domain_name}.")
+            continue
+        
+        print(f"   - Found {num_states} states.")
+
+        # --- Create State-Level ToC Grid ---
         md_content.append("\n### Jump to State")
-        links = [f"[{i + 1}](#state-{i + 1}-{domain_anchor})" for i in range(len(state_keys))]
+        links = [f"[{i + 1}](#state-{i + 1}-{domain_anchor})" for i in range(num_states)]
         num_columns = 10
 
         # Create the table header
@@ -234,53 +134,50 @@ def main():
 
         # Add the last row if it's not full
         if current_row:
-            # Pad the last row to have the correct number of columns
             while len(current_row) < num_columns:
                 current_row.append(" ")
             md_content.append("| " + " | ".join(current_row) + " |")
         
 
         # --- Loop Through Each State in the Domain ---
-        for i, state_key in enumerate(state_keys):
-            print(f"  - Generating state {i + 1}...")
+        for i in range(num_states):
             state_anchor = f"state-{i + 1}-{domain_anchor}"
             md_content.append(f"\n---\n<h3 id='{state_anchor}'>State {i + 1}</h3>")
 
-            state_array = np.array(state_key)
-            state_grid = format_state(state_array, env_args)
-
-            # --- Generate the 4-column side-by-side table ---
+            # --- Generate the side-by-side table ---
             md_content.append("<table>")
-            # Header row
-            md_content.append("<tr>")
-            for name in config['explanations']:
-                md_content.append(f"<th>{name}</th>")
-            md_content.append("</tr>")
+
+            # # Header row
+            # md_content.append("<tr>")
+            # for name in config['explanation_names']:
+            #     md_content.append(f"<th>{name}</th>")
+            # md_content.append("</tr>")
             
-            # Content row
+            # Content row (images)
             md_content.append("<tr>")
-            for name, data in explanation_data.items():
-                sv = data[state_key]
-                action_info = None
+            for name in config['explanation_names']:
+                explanation_dir = IMG_DIR_MAP.get(name)
                 
-                # Special handling for Behaviour
-                if name == "Behaviour":
-                    action = agent.choose_action(torch.tensor([state_array], dtype=torch.float32), exp=False).action[0]
-                    sv = sv[:, action]
+                if not explanation_dir:
+                    print(f"   - WARNING: No image directory mapping for '{name}' in state {i+1}.")
+                    cell_content = f"Missing mapping for {name}"
+                else:
+                    # USE SCRIPT-RELATIVE PATH for os.path.exists
+                    script_image_path = os.path.join(SCRIPT_IMG_BASE_PATH, explanation_dir, domain_short, f"mastermind_state-{i}{IMG_EXTENSION}")
                     
-                    # Find which guess slot this action corresponds to
-                    guess_idx = np.where(state_array == -1)[0][0] // (env_args.code_size + 2)
-
-                    action_as_letters = [MOVE_DICT[val] for val in envs.envs[0].unwrapped.index_to_guess[action]]
-                    action_info = {'guess_idx': guess_idx, 'letters': action_as_letters}
-
-                # Reshape and normalize SVs
-                sv_grid = np.flipud(np.reshape(sv, (env_args.num_guesses, env_args.code_size + 2)))
-                if sv_grid.max() - sv_grid.min() != 0:
-                    sv_grid = sv_grid / max(abs(sv_grid.max()), abs(sv_grid.min()))
-
-                board_html = generate_board_html(state_grid, sv_grid, action_info)
-                md_content.append(f'<td valign="top">{board_html}</td>')
+                    # USE HTML-RELATIVE PATH for the <img> src tag
+                    html_image_path = f"{HTML_IMG_BASE_PATH}/{explanation_dir}/{domain_short}/mastermind_state-{i}{IMG_EXTENSION}"
+                    
+                    # Check if the specific file exists (using the script path)
+                    if not os.path.exists(script_image_path):
+                        print(f"   - WARNING: Image file not found: {script_image_path}")
+                        cell_content = f"Image not found: {script_image_path}"
+                    else:
+                        # Create the HTML image tag (using the HTML path)
+                        # We add "./" to ensure it's always treated as a relative path
+                        cell_content = f'<img src="./{html_image_path}" alt="{name} explanation for state {i+1}">'
+                
+                md_content.append(f'<td valign="top" align="center">{cell_content}</td>')
             
             md_content.append("</tr>")
             md_content.append("</table>")
@@ -293,4 +190,15 @@ def main():
 
 
 if __name__ == "__main__":
+    # Ensure the script uses paths relative to its own location
+    # This makes os.path.join work correctly
+    try:
+        script_dir = os.path.dirname(__file__)
+        if script_dir:
+            os.chdir(script_dir)
+    except NameError:
+        # __file__ is not defined, e.g., in an interactive REPL
+        # In this case, we assume the script is run from the correct directory
+        pass 
+        
     main()
