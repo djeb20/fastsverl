@@ -7,7 +7,7 @@ Mastermind is a code-breaking game where, in these versions, an agent must guess
 
 ## How to Read the Visualisations
 
-For each state, three explanation types are shown side-by-side: *Behaviour*, *Performance*, and *Prediction*. The colour of each cell on the board represents its relative Shapley value, which indicates the feature's contribution to the explanation type. **For clarity, the Shapley values in all figures are normalised to sit between -1 and 1.**
+For each state, three explanation types are shown side-by-side: *Behaviour*, *Outcome*, and *Prediction*. The colour of each cell on the board represents its relative Shapley value, which indicates the feature's contribution to the explanation type. **For clarity, the Shapley values in all figures are normalised to sit between -1 and 1.**
 
 * *Blue* cells indicate a *positive* contribution.
 * *Red* cells indicate a *negative* contribution.
@@ -54,7 +54,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/443/mastermind_state-0.png" alt="Behaviour explanation for state 1"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/443/mastermind_state-0.png" alt="Performance explanation for state 1"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/443/mastermind_state-0.png" alt="Outcome explanation for state 1"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/443/mastermind_state-0.png" alt="Prediction explanation for state 1"></td>
 </tr>
 </table>
@@ -64,7 +64,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/443/mastermind_state-1.png" alt="Behaviour explanation for state 2"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/443/mastermind_state-1.png" alt="Performance explanation for state 2"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/443/mastermind_state-1.png" alt="Outcome explanation for state 2"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/443/mastermind_state-1.png" alt="Prediction explanation for state 2"></td>
 </tr>
 </table>
@@ -74,7 +74,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/443/mastermind_state-2.png" alt="Behaviour explanation for state 3"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/443/mastermind_state-2.png" alt="Performance explanation for state 3"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/443/mastermind_state-2.png" alt="Outcome explanation for state 3"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/443/mastermind_state-2.png" alt="Prediction explanation for state 3"></td>
 </tr>
 </table>
@@ -84,7 +84,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/443/mastermind_state-3.png" alt="Behaviour explanation for state 4"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/443/mastermind_state-3.png" alt="Performance explanation for state 4"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/443/mastermind_state-3.png" alt="Outcome explanation for state 4"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/443/mastermind_state-3.png" alt="Prediction explanation for state 4"></td>
 </tr>
 </table>
@@ -94,7 +94,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/443/mastermind_state-4.png" alt="Behaviour explanation for state 5"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/443/mastermind_state-4.png" alt="Performance explanation for state 5"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/443/mastermind_state-4.png" alt="Outcome explanation for state 5"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/443/mastermind_state-4.png" alt="Prediction explanation for state 5"></td>
 </tr>
 </table>
@@ -104,7 +104,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/443/mastermind_state-5.png" alt="Behaviour explanation for state 6"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/443/mastermind_state-5.png" alt="Performance explanation for state 6"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/443/mastermind_state-5.png" alt="Outcome explanation for state 6"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/443/mastermind_state-5.png" alt="Prediction explanation for state 6"></td>
 </tr>
 </table>
@@ -114,7 +114,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/443/mastermind_state-6.png" alt="Behaviour explanation for state 7"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/443/mastermind_state-6.png" alt="Performance explanation for state 7"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/443/mastermind_state-6.png" alt="Outcome explanation for state 7"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/443/mastermind_state-6.png" alt="Prediction explanation for state 7"></td>
 </tr>
 </table>
@@ -124,7 +124,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/443/mastermind_state-7.png" alt="Behaviour explanation for state 8"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/443/mastermind_state-7.png" alt="Performance explanation for state 8"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/443/mastermind_state-7.png" alt="Outcome explanation for state 8"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/443/mastermind_state-7.png" alt="Prediction explanation for state 8"></td>
 </tr>
 </table>
@@ -134,7 +134,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/443/mastermind_state-8.png" alt="Behaviour explanation for state 9"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/443/mastermind_state-8.png" alt="Performance explanation for state 9"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/443/mastermind_state-8.png" alt="Outcome explanation for state 9"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/443/mastermind_state-8.png" alt="Prediction explanation for state 9"></td>
 </tr>
 </table>
@@ -144,7 +144,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/443/mastermind_state-9.png" alt="Behaviour explanation for state 10"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/443/mastermind_state-9.png" alt="Performance explanation for state 10"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/443/mastermind_state-9.png" alt="Outcome explanation for state 10"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/443/mastermind_state-9.png" alt="Prediction explanation for state 10"></td>
 </tr>
 </table>
@@ -154,7 +154,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/443/mastermind_state-10.png" alt="Behaviour explanation for state 11"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/443/mastermind_state-10.png" alt="Performance explanation for state 11"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/443/mastermind_state-10.png" alt="Outcome explanation for state 11"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/443/mastermind_state-10.png" alt="Prediction explanation for state 11"></td>
 </tr>
 </table>
@@ -164,7 +164,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/443/mastermind_state-11.png" alt="Behaviour explanation for state 12"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/443/mastermind_state-11.png" alt="Performance explanation for state 12"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/443/mastermind_state-11.png" alt="Outcome explanation for state 12"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/443/mastermind_state-11.png" alt="Prediction explanation for state 12"></td>
 </tr>
 </table>
@@ -174,7 +174,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/443/mastermind_state-12.png" alt="Behaviour explanation for state 13"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/443/mastermind_state-12.png" alt="Performance explanation for state 13"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/443/mastermind_state-12.png" alt="Outcome explanation for state 13"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/443/mastermind_state-12.png" alt="Prediction explanation for state 13"></td>
 </tr>
 </table>
@@ -184,7 +184,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/443/mastermind_state-13.png" alt="Behaviour explanation for state 14"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/443/mastermind_state-13.png" alt="Performance explanation for state 14"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/443/mastermind_state-13.png" alt="Outcome explanation for state 14"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/443/mastermind_state-13.png" alt="Prediction explanation for state 14"></td>
 </tr>
 </table>
@@ -194,7 +194,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/443/mastermind_state-14.png" alt="Behaviour explanation for state 15"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/443/mastermind_state-14.png" alt="Performance explanation for state 15"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/443/mastermind_state-14.png" alt="Outcome explanation for state 15"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/443/mastermind_state-14.png" alt="Prediction explanation for state 15"></td>
 </tr>
 </table>
@@ -204,7 +204,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/443/mastermind_state-15.png" alt="Behaviour explanation for state 16"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/443/mastermind_state-15.png" alt="Performance explanation for state 16"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/443/mastermind_state-15.png" alt="Outcome explanation for state 16"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/443/mastermind_state-15.png" alt="Prediction explanation for state 16"></td>
 </tr>
 </table>
@@ -214,7 +214,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/443/mastermind_state-16.png" alt="Behaviour explanation for state 17"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/443/mastermind_state-16.png" alt="Performance explanation for state 17"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/443/mastermind_state-16.png" alt="Outcome explanation for state 17"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/443/mastermind_state-16.png" alt="Prediction explanation for state 17"></td>
 </tr>
 </table>
@@ -224,7 +224,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/443/mastermind_state-17.png" alt="Behaviour explanation for state 18"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/443/mastermind_state-17.png" alt="Performance explanation for state 18"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/443/mastermind_state-17.png" alt="Outcome explanation for state 18"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/443/mastermind_state-17.png" alt="Prediction explanation for state 18"></td>
 </tr>
 </table>
@@ -234,7 +234,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/443/mastermind_state-18.png" alt="Behaviour explanation for state 19"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/443/mastermind_state-18.png" alt="Performance explanation for state 19"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/443/mastermind_state-18.png" alt="Outcome explanation for state 19"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/443/mastermind_state-18.png" alt="Prediction explanation for state 19"></td>
 </tr>
 </table>
@@ -244,7 +244,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/443/mastermind_state-19.png" alt="Behaviour explanation for state 20"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/443/mastermind_state-19.png" alt="Performance explanation for state 20"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/443/mastermind_state-19.png" alt="Outcome explanation for state 20"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/443/mastermind_state-19.png" alt="Prediction explanation for state 20"></td>
 </tr>
 </table>
@@ -254,7 +254,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/443/mastermind_state-20.png" alt="Behaviour explanation for state 21"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/443/mastermind_state-20.png" alt="Performance explanation for state 21"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/443/mastermind_state-20.png" alt="Outcome explanation for state 21"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/443/mastermind_state-20.png" alt="Prediction explanation for state 21"></td>
 </tr>
 </table>
@@ -264,7 +264,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/443/mastermind_state-21.png" alt="Behaviour explanation for state 22"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/443/mastermind_state-21.png" alt="Performance explanation for state 22"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/443/mastermind_state-21.png" alt="Outcome explanation for state 22"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/443/mastermind_state-21.png" alt="Prediction explanation for state 22"></td>
 </tr>
 </table>
@@ -274,7 +274,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/443/mastermind_state-22.png" alt="Behaviour explanation for state 23"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/443/mastermind_state-22.png" alt="Performance explanation for state 23"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/443/mastermind_state-22.png" alt="Outcome explanation for state 23"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/443/mastermind_state-22.png" alt="Prediction explanation for state 23"></td>
 </tr>
 </table>
@@ -284,7 +284,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/443/mastermind_state-23.png" alt="Behaviour explanation for state 24"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/443/mastermind_state-23.png" alt="Performance explanation for state 24"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/443/mastermind_state-23.png" alt="Outcome explanation for state 24"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/443/mastermind_state-23.png" alt="Prediction explanation for state 24"></td>
 </tr>
 </table>
@@ -294,7 +294,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/443/mastermind_state-24.png" alt="Behaviour explanation for state 25"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/443/mastermind_state-24.png" alt="Performance explanation for state 25"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/443/mastermind_state-24.png" alt="Outcome explanation for state 25"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/443/mastermind_state-24.png" alt="Prediction explanation for state 25"></td>
 </tr>
 </table>
@@ -304,7 +304,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/443/mastermind_state-25.png" alt="Behaviour explanation for state 26"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/443/mastermind_state-25.png" alt="Performance explanation for state 26"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/443/mastermind_state-25.png" alt="Outcome explanation for state 26"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/443/mastermind_state-25.png" alt="Prediction explanation for state 26"></td>
 </tr>
 </table>
@@ -314,7 +314,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/443/mastermind_state-26.png" alt="Behaviour explanation for state 27"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/443/mastermind_state-26.png" alt="Performance explanation for state 27"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/443/mastermind_state-26.png" alt="Outcome explanation for state 27"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/443/mastermind_state-26.png" alt="Prediction explanation for state 27"></td>
 </tr>
 </table>
@@ -324,7 +324,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/443/mastermind_state-27.png" alt="Behaviour explanation for state 28"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/443/mastermind_state-27.png" alt="Performance explanation for state 28"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/443/mastermind_state-27.png" alt="Outcome explanation for state 28"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/443/mastermind_state-27.png" alt="Prediction explanation for state 28"></td>
 </tr>
 </table>
@@ -334,7 +334,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/443/mastermind_state-28.png" alt="Behaviour explanation for state 29"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/443/mastermind_state-28.png" alt="Performance explanation for state 29"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/443/mastermind_state-28.png" alt="Outcome explanation for state 29"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/443/mastermind_state-28.png" alt="Prediction explanation for state 29"></td>
 </tr>
 </table>
@@ -344,7 +344,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/443/mastermind_state-29.png" alt="Behaviour explanation for state 30"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/443/mastermind_state-29.png" alt="Performance explanation for state 30"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/443/mastermind_state-29.png" alt="Outcome explanation for state 30"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/443/mastermind_state-29.png" alt="Prediction explanation for state 30"></td>
 </tr>
 </table>
@@ -354,7 +354,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/443/mastermind_state-30.png" alt="Behaviour explanation for state 31"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/443/mastermind_state-30.png" alt="Performance explanation for state 31"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/443/mastermind_state-30.png" alt="Outcome explanation for state 31"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/443/mastermind_state-30.png" alt="Prediction explanation for state 31"></td>
 </tr>
 </table>
@@ -364,7 +364,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/443/mastermind_state-31.png" alt="Behaviour explanation for state 32"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/443/mastermind_state-31.png" alt="Performance explanation for state 32"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/443/mastermind_state-31.png" alt="Outcome explanation for state 32"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/443/mastermind_state-31.png" alt="Prediction explanation for state 32"></td>
 </tr>
 </table>
@@ -374,7 +374,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/443/mastermind_state-32.png" alt="Behaviour explanation for state 33"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/443/mastermind_state-32.png" alt="Performance explanation for state 33"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/443/mastermind_state-32.png" alt="Outcome explanation for state 33"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/443/mastermind_state-32.png" alt="Prediction explanation for state 33"></td>
 </tr>
 </table>
@@ -384,7 +384,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/443/mastermind_state-33.png" alt="Behaviour explanation for state 34"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/443/mastermind_state-33.png" alt="Performance explanation for state 34"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/443/mastermind_state-33.png" alt="Outcome explanation for state 34"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/443/mastermind_state-33.png" alt="Prediction explanation for state 34"></td>
 </tr>
 </table>
@@ -394,7 +394,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/443/mastermind_state-34.png" alt="Behaviour explanation for state 35"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/443/mastermind_state-34.png" alt="Performance explanation for state 35"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/443/mastermind_state-34.png" alt="Outcome explanation for state 35"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/443/mastermind_state-34.png" alt="Prediction explanation for state 35"></td>
 </tr>
 </table>
@@ -404,7 +404,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/443/mastermind_state-35.png" alt="Behaviour explanation for state 36"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/443/mastermind_state-35.png" alt="Performance explanation for state 36"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/443/mastermind_state-35.png" alt="Outcome explanation for state 36"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/443/mastermind_state-35.png" alt="Prediction explanation for state 36"></td>
 </tr>
 </table>
@@ -414,7 +414,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/443/mastermind_state-36.png" alt="Behaviour explanation for state 37"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/443/mastermind_state-36.png" alt="Performance explanation for state 37"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/443/mastermind_state-36.png" alt="Outcome explanation for state 37"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/443/mastermind_state-36.png" alt="Prediction explanation for state 37"></td>
 </tr>
 </table>
@@ -424,7 +424,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/443/mastermind_state-37.png" alt="Behaviour explanation for state 38"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/443/mastermind_state-37.png" alt="Performance explanation for state 38"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/443/mastermind_state-37.png" alt="Outcome explanation for state 38"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/443/mastermind_state-37.png" alt="Prediction explanation for state 38"></td>
 </tr>
 </table>
@@ -434,7 +434,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/443/mastermind_state-38.png" alt="Behaviour explanation for state 39"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/443/mastermind_state-38.png" alt="Performance explanation for state 39"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/443/mastermind_state-38.png" alt="Outcome explanation for state 39"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/443/mastermind_state-38.png" alt="Prediction explanation for state 39"></td>
 </tr>
 </table>
@@ -444,7 +444,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/443/mastermind_state-39.png" alt="Behaviour explanation for state 40"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/443/mastermind_state-39.png" alt="Performance explanation for state 40"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/443/mastermind_state-39.png" alt="Outcome explanation for state 40"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/443/mastermind_state-39.png" alt="Prediction explanation for state 40"></td>
 </tr>
 </table>
@@ -454,7 +454,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/443/mastermind_state-40.png" alt="Behaviour explanation for state 41"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/443/mastermind_state-40.png" alt="Performance explanation for state 41"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/443/mastermind_state-40.png" alt="Outcome explanation for state 41"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/443/mastermind_state-40.png" alt="Prediction explanation for state 41"></td>
 </tr>
 </table>
@@ -464,7 +464,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/443/mastermind_state-41.png" alt="Behaviour explanation for state 42"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/443/mastermind_state-41.png" alt="Performance explanation for state 42"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/443/mastermind_state-41.png" alt="Outcome explanation for state 42"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/443/mastermind_state-41.png" alt="Prediction explanation for state 42"></td>
 </tr>
 </table>
@@ -474,7 +474,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/443/mastermind_state-42.png" alt="Behaviour explanation for state 43"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/443/mastermind_state-42.png" alt="Performance explanation for state 43"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/443/mastermind_state-42.png" alt="Outcome explanation for state 43"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/443/mastermind_state-42.png" alt="Prediction explanation for state 43"></td>
 </tr>
 </table>
@@ -484,7 +484,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/443/mastermind_state-43.png" alt="Behaviour explanation for state 44"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/443/mastermind_state-43.png" alt="Performance explanation for state 44"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/443/mastermind_state-43.png" alt="Outcome explanation for state 44"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/443/mastermind_state-43.png" alt="Prediction explanation for state 44"></td>
 </tr>
 </table>
@@ -494,7 +494,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/443/mastermind_state-44.png" alt="Behaviour explanation for state 45"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/443/mastermind_state-44.png" alt="Performance explanation for state 45"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/443/mastermind_state-44.png" alt="Outcome explanation for state 45"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/443/mastermind_state-44.png" alt="Prediction explanation for state 45"></td>
 </tr>
 </table>
@@ -504,7 +504,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/443/mastermind_state-45.png" alt="Behaviour explanation for state 46"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/443/mastermind_state-45.png" alt="Performance explanation for state 46"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/443/mastermind_state-45.png" alt="Outcome explanation for state 46"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/443/mastermind_state-45.png" alt="Prediction explanation for state 46"></td>
 </tr>
 </table>
@@ -514,7 +514,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/443/mastermind_state-46.png" alt="Behaviour explanation for state 47"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/443/mastermind_state-46.png" alt="Performance explanation for state 47"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/443/mastermind_state-46.png" alt="Outcome explanation for state 47"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/443/mastermind_state-46.png" alt="Prediction explanation for state 47"></td>
 </tr>
 </table>
@@ -524,7 +524,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/443/mastermind_state-47.png" alt="Behaviour explanation for state 48"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/443/mastermind_state-47.png" alt="Performance explanation for state 48"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/443/mastermind_state-47.png" alt="Outcome explanation for state 48"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/443/mastermind_state-47.png" alt="Prediction explanation for state 48"></td>
 </tr>
 </table>
@@ -534,7 +534,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/443/mastermind_state-48.png" alt="Behaviour explanation for state 49"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/443/mastermind_state-48.png" alt="Performance explanation for state 49"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/443/mastermind_state-48.png" alt="Outcome explanation for state 49"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/443/mastermind_state-48.png" alt="Prediction explanation for state 49"></td>
 </tr>
 </table>
@@ -544,7 +544,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/443/mastermind_state-49.png" alt="Behaviour explanation for state 50"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/443/mastermind_state-49.png" alt="Performance explanation for state 50"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/443/mastermind_state-49.png" alt="Outcome explanation for state 50"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/443/mastermind_state-49.png" alt="Prediction explanation for state 50"></td>
 </tr>
 </table>
@@ -554,7 +554,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/443/mastermind_state-50.png" alt="Behaviour explanation for state 51"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/443/mastermind_state-50.png" alt="Performance explanation for state 51"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/443/mastermind_state-50.png" alt="Outcome explanation for state 51"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/443/mastermind_state-50.png" alt="Prediction explanation for state 51"></td>
 </tr>
 </table>
@@ -564,7 +564,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/443/mastermind_state-51.png" alt="Behaviour explanation for state 52"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/443/mastermind_state-51.png" alt="Performance explanation for state 52"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/443/mastermind_state-51.png" alt="Outcome explanation for state 52"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/443/mastermind_state-51.png" alt="Prediction explanation for state 52"></td>
 </tr>
 </table>
@@ -574,7 +574,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/443/mastermind_state-52.png" alt="Behaviour explanation for state 53"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/443/mastermind_state-52.png" alt="Performance explanation for state 53"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/443/mastermind_state-52.png" alt="Outcome explanation for state 53"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/443/mastermind_state-52.png" alt="Prediction explanation for state 53"></td>
 </tr>
 </table>
@@ -584,7 +584,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/443/mastermind_state-53.png" alt="Behaviour explanation for state 54"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/443/mastermind_state-53.png" alt="Performance explanation for state 54"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/443/mastermind_state-53.png" alt="Outcome explanation for state 54"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/443/mastermind_state-53.png" alt="Prediction explanation for state 54"></td>
 </tr>
 </table>
@@ -594,7 +594,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/443/mastermind_state-54.png" alt="Behaviour explanation for state 55"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/443/mastermind_state-54.png" alt="Performance explanation for state 55"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/443/mastermind_state-54.png" alt="Outcome explanation for state 55"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/443/mastermind_state-54.png" alt="Prediction explanation for state 55"></td>
 </tr>
 </table>
@@ -604,7 +604,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/443/mastermind_state-55.png" alt="Behaviour explanation for state 56"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/443/mastermind_state-55.png" alt="Performance explanation for state 56"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/443/mastermind_state-55.png" alt="Outcome explanation for state 56"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/443/mastermind_state-55.png" alt="Prediction explanation for state 56"></td>
 </tr>
 </table>
@@ -614,7 +614,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/443/mastermind_state-56.png" alt="Behaviour explanation for state 57"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/443/mastermind_state-56.png" alt="Performance explanation for state 57"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/443/mastermind_state-56.png" alt="Outcome explanation for state 57"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/443/mastermind_state-56.png" alt="Prediction explanation for state 57"></td>
 </tr>
 </table>
@@ -624,7 +624,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/443/mastermind_state-57.png" alt="Behaviour explanation for state 58"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/443/mastermind_state-57.png" alt="Performance explanation for state 58"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/443/mastermind_state-57.png" alt="Outcome explanation for state 58"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/443/mastermind_state-57.png" alt="Prediction explanation for state 58"></td>
 </tr>
 </table>
@@ -634,7 +634,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/443/mastermind_state-58.png" alt="Behaviour explanation for state 59"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/443/mastermind_state-58.png" alt="Performance explanation for state 59"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/443/mastermind_state-58.png" alt="Outcome explanation for state 59"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/443/mastermind_state-58.png" alt="Prediction explanation for state 59"></td>
 </tr>
 </table>
@@ -644,7 +644,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/443/mastermind_state-59.png" alt="Behaviour explanation for state 60"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/443/mastermind_state-59.png" alt="Performance explanation for state 60"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/443/mastermind_state-59.png" alt="Outcome explanation for state 60"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/443/mastermind_state-59.png" alt="Prediction explanation for state 60"></td>
 </tr>
 </table>
@@ -654,7 +654,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/443/mastermind_state-60.png" alt="Behaviour explanation for state 61"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/443/mastermind_state-60.png" alt="Performance explanation for state 61"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/443/mastermind_state-60.png" alt="Outcome explanation for state 61"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/443/mastermind_state-60.png" alt="Prediction explanation for state 61"></td>
 </tr>
 </table>
@@ -664,7 +664,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/443/mastermind_state-61.png" alt="Behaviour explanation for state 62"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/443/mastermind_state-61.png" alt="Performance explanation for state 62"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/443/mastermind_state-61.png" alt="Outcome explanation for state 62"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/443/mastermind_state-61.png" alt="Prediction explanation for state 62"></td>
 </tr>
 </table>
@@ -674,7 +674,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/443/mastermind_state-62.png" alt="Behaviour explanation for state 63"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/443/mastermind_state-62.png" alt="Performance explanation for state 63"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/443/mastermind_state-62.png" alt="Outcome explanation for state 63"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/443/mastermind_state-62.png" alt="Prediction explanation for state 63"></td>
 </tr>
 </table>
@@ -684,7 +684,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/443/mastermind_state-63.png" alt="Behaviour explanation for state 64"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/443/mastermind_state-63.png" alt="Performance explanation for state 64"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/443/mastermind_state-63.png" alt="Outcome explanation for state 64"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/443/mastermind_state-63.png" alt="Prediction explanation for state 64"></td>
 </tr>
 </table>
@@ -694,7 +694,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/443/mastermind_state-64.png" alt="Behaviour explanation for state 65"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/443/mastermind_state-64.png" alt="Performance explanation for state 65"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/443/mastermind_state-64.png" alt="Outcome explanation for state 65"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/443/mastermind_state-64.png" alt="Prediction explanation for state 65"></td>
 </tr>
 </table>
@@ -704,7 +704,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/443/mastermind_state-65.png" alt="Behaviour explanation for state 66"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/443/mastermind_state-65.png" alt="Performance explanation for state 66"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/443/mastermind_state-65.png" alt="Outcome explanation for state 66"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/443/mastermind_state-65.png" alt="Prediction explanation for state 66"></td>
 </tr>
 </table>
@@ -714,7 +714,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/443/mastermind_state-66.png" alt="Behaviour explanation for state 67"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/443/mastermind_state-66.png" alt="Performance explanation for state 67"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/443/mastermind_state-66.png" alt="Outcome explanation for state 67"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/443/mastermind_state-66.png" alt="Prediction explanation for state 67"></td>
 </tr>
 </table>
@@ -724,7 +724,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/443/mastermind_state-67.png" alt="Behaviour explanation for state 68"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/443/mastermind_state-67.png" alt="Performance explanation for state 68"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/443/mastermind_state-67.png" alt="Outcome explanation for state 68"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/443/mastermind_state-67.png" alt="Prediction explanation for state 68"></td>
 </tr>
 </table>
@@ -734,7 +734,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/443/mastermind_state-68.png" alt="Behaviour explanation for state 69"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/443/mastermind_state-68.png" alt="Performance explanation for state 69"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/443/mastermind_state-68.png" alt="Outcome explanation for state 69"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/443/mastermind_state-68.png" alt="Prediction explanation for state 69"></td>
 </tr>
 </table>
@@ -744,7 +744,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/443/mastermind_state-69.png" alt="Behaviour explanation for state 70"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/443/mastermind_state-69.png" alt="Performance explanation for state 70"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/443/mastermind_state-69.png" alt="Outcome explanation for state 70"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/443/mastermind_state-69.png" alt="Prediction explanation for state 70"></td>
 </tr>
 </table>
@@ -754,7 +754,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/443/mastermind_state-70.png" alt="Behaviour explanation for state 71"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/443/mastermind_state-70.png" alt="Performance explanation for state 71"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/443/mastermind_state-70.png" alt="Outcome explanation for state 71"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/443/mastermind_state-70.png" alt="Prediction explanation for state 71"></td>
 </tr>
 </table>
@@ -764,7 +764,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/443/mastermind_state-71.png" alt="Behaviour explanation for state 72"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/443/mastermind_state-71.png" alt="Performance explanation for state 72"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/443/mastermind_state-71.png" alt="Outcome explanation for state 72"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/443/mastermind_state-71.png" alt="Prediction explanation for state 72"></td>
 </tr>
 </table>
@@ -774,7 +774,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/443/mastermind_state-72.png" alt="Behaviour explanation for state 73"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/443/mastermind_state-72.png" alt="Performance explanation for state 73"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/443/mastermind_state-72.png" alt="Outcome explanation for state 73"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/443/mastermind_state-72.png" alt="Prediction explanation for state 73"></td>
 </tr>
 </table>
@@ -784,7 +784,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/443/mastermind_state-73.png" alt="Behaviour explanation for state 74"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/443/mastermind_state-73.png" alt="Performance explanation for state 74"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/443/mastermind_state-73.png" alt="Outcome explanation for state 74"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/443/mastermind_state-73.png" alt="Prediction explanation for state 74"></td>
 </tr>
 </table>
@@ -794,7 +794,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/443/mastermind_state-74.png" alt="Behaviour explanation for state 75"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/443/mastermind_state-74.png" alt="Performance explanation for state 75"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/443/mastermind_state-74.png" alt="Outcome explanation for state 75"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/443/mastermind_state-74.png" alt="Prediction explanation for state 75"></td>
 </tr>
 </table>
@@ -822,7 +822,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/453/mastermind_state-0.png" alt="Behaviour explanation for state 1"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/453/mastermind_state-0.png" alt="Performance explanation for state 1"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/453/mastermind_state-0.png" alt="Outcome explanation for state 1"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/453/mastermind_state-0.png" alt="Prediction explanation for state 1"></td>
 </tr>
 </table>
@@ -832,7 +832,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/453/mastermind_state-1.png" alt="Behaviour explanation for state 2"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/453/mastermind_state-1.png" alt="Performance explanation for state 2"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/453/mastermind_state-1.png" alt="Outcome explanation for state 2"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/453/mastermind_state-1.png" alt="Prediction explanation for state 2"></td>
 </tr>
 </table>
@@ -842,7 +842,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/453/mastermind_state-2.png" alt="Behaviour explanation for state 3"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/453/mastermind_state-2.png" alt="Performance explanation for state 3"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/453/mastermind_state-2.png" alt="Outcome explanation for state 3"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/453/mastermind_state-2.png" alt="Prediction explanation for state 3"></td>
 </tr>
 </table>
@@ -852,7 +852,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/453/mastermind_state-3.png" alt="Behaviour explanation for state 4"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/453/mastermind_state-3.png" alt="Performance explanation for state 4"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/453/mastermind_state-3.png" alt="Outcome explanation for state 4"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/453/mastermind_state-3.png" alt="Prediction explanation for state 4"></td>
 </tr>
 </table>
@@ -862,7 +862,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/453/mastermind_state-4.png" alt="Behaviour explanation for state 5"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/453/mastermind_state-4.png" alt="Performance explanation for state 5"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/453/mastermind_state-4.png" alt="Outcome explanation for state 5"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/453/mastermind_state-4.png" alt="Prediction explanation for state 5"></td>
 </tr>
 </table>
@@ -872,7 +872,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/453/mastermind_state-5.png" alt="Behaviour explanation for state 6"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/453/mastermind_state-5.png" alt="Performance explanation for state 6"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/453/mastermind_state-5.png" alt="Outcome explanation for state 6"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/453/mastermind_state-5.png" alt="Prediction explanation for state 6"></td>
 </tr>
 </table>
@@ -882,7 +882,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/453/mastermind_state-6.png" alt="Behaviour explanation for state 7"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/453/mastermind_state-6.png" alt="Performance explanation for state 7"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/453/mastermind_state-6.png" alt="Outcome explanation for state 7"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/453/mastermind_state-6.png" alt="Prediction explanation for state 7"></td>
 </tr>
 </table>
@@ -892,7 +892,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/453/mastermind_state-7.png" alt="Behaviour explanation for state 8"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/453/mastermind_state-7.png" alt="Performance explanation for state 8"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/453/mastermind_state-7.png" alt="Outcome explanation for state 8"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/453/mastermind_state-7.png" alt="Prediction explanation for state 8"></td>
 </tr>
 </table>
@@ -902,7 +902,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/453/mastermind_state-8.png" alt="Behaviour explanation for state 9"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/453/mastermind_state-8.png" alt="Performance explanation for state 9"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/453/mastermind_state-8.png" alt="Outcome explanation for state 9"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/453/mastermind_state-8.png" alt="Prediction explanation for state 9"></td>
 </tr>
 </table>
@@ -912,7 +912,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/453/mastermind_state-9.png" alt="Behaviour explanation for state 10"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/453/mastermind_state-9.png" alt="Performance explanation for state 10"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/453/mastermind_state-9.png" alt="Outcome explanation for state 10"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/453/mastermind_state-9.png" alt="Prediction explanation for state 10"></td>
 </tr>
 </table>
@@ -922,7 +922,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/453/mastermind_state-10.png" alt="Behaviour explanation for state 11"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/453/mastermind_state-10.png" alt="Performance explanation for state 11"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/453/mastermind_state-10.png" alt="Outcome explanation for state 11"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/453/mastermind_state-10.png" alt="Prediction explanation for state 11"></td>
 </tr>
 </table>
@@ -932,7 +932,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/453/mastermind_state-11.png" alt="Behaviour explanation for state 12"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/453/mastermind_state-11.png" alt="Performance explanation for state 12"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/453/mastermind_state-11.png" alt="Outcome explanation for state 12"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/453/mastermind_state-11.png" alt="Prediction explanation for state 12"></td>
 </tr>
 </table>
@@ -942,7 +942,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/453/mastermind_state-12.png" alt="Behaviour explanation for state 13"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/453/mastermind_state-12.png" alt="Performance explanation for state 13"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/453/mastermind_state-12.png" alt="Outcome explanation for state 13"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/453/mastermind_state-12.png" alt="Prediction explanation for state 13"></td>
 </tr>
 </table>
@@ -952,7 +952,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/453/mastermind_state-13.png" alt="Behaviour explanation for state 14"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/453/mastermind_state-13.png" alt="Performance explanation for state 14"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/453/mastermind_state-13.png" alt="Outcome explanation for state 14"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/453/mastermind_state-13.png" alt="Prediction explanation for state 14"></td>
 </tr>
 </table>
@@ -962,7 +962,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/453/mastermind_state-14.png" alt="Behaviour explanation for state 15"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/453/mastermind_state-14.png" alt="Performance explanation for state 15"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/453/mastermind_state-14.png" alt="Outcome explanation for state 15"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/453/mastermind_state-14.png" alt="Prediction explanation for state 15"></td>
 </tr>
 </table>
@@ -972,7 +972,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/453/mastermind_state-15.png" alt="Behaviour explanation for state 16"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/453/mastermind_state-15.png" alt="Performance explanation for state 16"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/453/mastermind_state-15.png" alt="Outcome explanation for state 16"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/453/mastermind_state-15.png" alt="Prediction explanation for state 16"></td>
 </tr>
 </table>
@@ -982,7 +982,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/453/mastermind_state-16.png" alt="Behaviour explanation for state 17"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/453/mastermind_state-16.png" alt="Performance explanation for state 17"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/453/mastermind_state-16.png" alt="Outcome explanation for state 17"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/453/mastermind_state-16.png" alt="Prediction explanation for state 17"></td>
 </tr>
 </table>
@@ -992,7 +992,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/453/mastermind_state-17.png" alt="Behaviour explanation for state 18"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/453/mastermind_state-17.png" alt="Performance explanation for state 18"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/453/mastermind_state-17.png" alt="Outcome explanation for state 18"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/453/mastermind_state-17.png" alt="Prediction explanation for state 18"></td>
 </tr>
 </table>
@@ -1002,7 +1002,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/453/mastermind_state-18.png" alt="Behaviour explanation for state 19"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/453/mastermind_state-18.png" alt="Performance explanation for state 19"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/453/mastermind_state-18.png" alt="Outcome explanation for state 19"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/453/mastermind_state-18.png" alt="Prediction explanation for state 19"></td>
 </tr>
 </table>
@@ -1012,7 +1012,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/453/mastermind_state-19.png" alt="Behaviour explanation for state 20"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/453/mastermind_state-19.png" alt="Performance explanation for state 20"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/453/mastermind_state-19.png" alt="Outcome explanation for state 20"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/453/mastermind_state-19.png" alt="Prediction explanation for state 20"></td>
 </tr>
 </table>
@@ -1022,7 +1022,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/453/mastermind_state-20.png" alt="Behaviour explanation for state 21"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/453/mastermind_state-20.png" alt="Performance explanation for state 21"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/453/mastermind_state-20.png" alt="Outcome explanation for state 21"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/453/mastermind_state-20.png" alt="Prediction explanation for state 21"></td>
 </tr>
 </table>
@@ -1032,7 +1032,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/453/mastermind_state-21.png" alt="Behaviour explanation for state 22"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/453/mastermind_state-21.png" alt="Performance explanation for state 22"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/453/mastermind_state-21.png" alt="Outcome explanation for state 22"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/453/mastermind_state-21.png" alt="Prediction explanation for state 22"></td>
 </tr>
 </table>
@@ -1042,7 +1042,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/453/mastermind_state-22.png" alt="Behaviour explanation for state 23"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/453/mastermind_state-22.png" alt="Performance explanation for state 23"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/453/mastermind_state-22.png" alt="Outcome explanation for state 23"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/453/mastermind_state-22.png" alt="Prediction explanation for state 23"></td>
 </tr>
 </table>
@@ -1052,7 +1052,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/453/mastermind_state-23.png" alt="Behaviour explanation for state 24"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/453/mastermind_state-23.png" alt="Performance explanation for state 24"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/453/mastermind_state-23.png" alt="Outcome explanation for state 24"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/453/mastermind_state-23.png" alt="Prediction explanation for state 24"></td>
 </tr>
 </table>
@@ -1062,7 +1062,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/453/mastermind_state-24.png" alt="Behaviour explanation for state 25"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/453/mastermind_state-24.png" alt="Performance explanation for state 25"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/453/mastermind_state-24.png" alt="Outcome explanation for state 25"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/453/mastermind_state-24.png" alt="Prediction explanation for state 25"></td>
 </tr>
 </table>
@@ -1072,7 +1072,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/453/mastermind_state-25.png" alt="Behaviour explanation for state 26"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/453/mastermind_state-25.png" alt="Performance explanation for state 26"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/453/mastermind_state-25.png" alt="Outcome explanation for state 26"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/453/mastermind_state-25.png" alt="Prediction explanation for state 26"></td>
 </tr>
 </table>
@@ -1082,7 +1082,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/453/mastermind_state-26.png" alt="Behaviour explanation for state 27"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/453/mastermind_state-26.png" alt="Performance explanation for state 27"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/453/mastermind_state-26.png" alt="Outcome explanation for state 27"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/453/mastermind_state-26.png" alt="Prediction explanation for state 27"></td>
 </tr>
 </table>
@@ -1092,7 +1092,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/453/mastermind_state-27.png" alt="Behaviour explanation for state 28"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/453/mastermind_state-27.png" alt="Performance explanation for state 28"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/453/mastermind_state-27.png" alt="Outcome explanation for state 28"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/453/mastermind_state-27.png" alt="Prediction explanation for state 28"></td>
 </tr>
 </table>
@@ -1102,7 +1102,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/453/mastermind_state-28.png" alt="Behaviour explanation for state 29"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/453/mastermind_state-28.png" alt="Performance explanation for state 29"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/453/mastermind_state-28.png" alt="Outcome explanation for state 29"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/453/mastermind_state-28.png" alt="Prediction explanation for state 29"></td>
 </tr>
 </table>
@@ -1112,7 +1112,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/453/mastermind_state-29.png" alt="Behaviour explanation for state 30"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/453/mastermind_state-29.png" alt="Performance explanation for state 30"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/453/mastermind_state-29.png" alt="Outcome explanation for state 30"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/453/mastermind_state-29.png" alt="Prediction explanation for state 30"></td>
 </tr>
 </table>
@@ -1122,7 +1122,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/453/mastermind_state-30.png" alt="Behaviour explanation for state 31"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/453/mastermind_state-30.png" alt="Performance explanation for state 31"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/453/mastermind_state-30.png" alt="Outcome explanation for state 31"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/453/mastermind_state-30.png" alt="Prediction explanation for state 31"></td>
 </tr>
 </table>
@@ -1132,7 +1132,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/453/mastermind_state-31.png" alt="Behaviour explanation for state 32"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/453/mastermind_state-31.png" alt="Performance explanation for state 32"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/453/mastermind_state-31.png" alt="Outcome explanation for state 32"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/453/mastermind_state-31.png" alt="Prediction explanation for state 32"></td>
 </tr>
 </table>
@@ -1142,7 +1142,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/453/mastermind_state-32.png" alt="Behaviour explanation for state 33"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/453/mastermind_state-32.png" alt="Performance explanation for state 33"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/453/mastermind_state-32.png" alt="Outcome explanation for state 33"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/453/mastermind_state-32.png" alt="Prediction explanation for state 33"></td>
 </tr>
 </table>
@@ -1152,7 +1152,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/453/mastermind_state-33.png" alt="Behaviour explanation for state 34"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/453/mastermind_state-33.png" alt="Performance explanation for state 34"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/453/mastermind_state-33.png" alt="Outcome explanation for state 34"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/453/mastermind_state-33.png" alt="Prediction explanation for state 34"></td>
 </tr>
 </table>
@@ -1162,7 +1162,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/453/mastermind_state-34.png" alt="Behaviour explanation for state 35"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/453/mastermind_state-34.png" alt="Performance explanation for state 35"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/453/mastermind_state-34.png" alt="Outcome explanation for state 35"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/453/mastermind_state-34.png" alt="Prediction explanation for state 35"></td>
 </tr>
 </table>
@@ -1172,7 +1172,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/453/mastermind_state-35.png" alt="Behaviour explanation for state 36"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/453/mastermind_state-35.png" alt="Performance explanation for state 36"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/453/mastermind_state-35.png" alt="Outcome explanation for state 36"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/453/mastermind_state-35.png" alt="Prediction explanation for state 36"></td>
 </tr>
 </table>
@@ -1182,7 +1182,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/453/mastermind_state-36.png" alt="Behaviour explanation for state 37"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/453/mastermind_state-36.png" alt="Performance explanation for state 37"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/453/mastermind_state-36.png" alt="Outcome explanation for state 37"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/453/mastermind_state-36.png" alt="Prediction explanation for state 37"></td>
 </tr>
 </table>
@@ -1192,7 +1192,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/453/mastermind_state-37.png" alt="Behaviour explanation for state 38"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/453/mastermind_state-37.png" alt="Performance explanation for state 38"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/453/mastermind_state-37.png" alt="Outcome explanation for state 38"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/453/mastermind_state-37.png" alt="Prediction explanation for state 38"></td>
 </tr>
 </table>
@@ -1202,7 +1202,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/453/mastermind_state-38.png" alt="Behaviour explanation for state 39"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/453/mastermind_state-38.png" alt="Performance explanation for state 39"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/453/mastermind_state-38.png" alt="Outcome explanation for state 39"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/453/mastermind_state-38.png" alt="Prediction explanation for state 39"></td>
 </tr>
 </table>
@@ -1212,7 +1212,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/453/mastermind_state-39.png" alt="Behaviour explanation for state 40"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/453/mastermind_state-39.png" alt="Performance explanation for state 40"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/453/mastermind_state-39.png" alt="Outcome explanation for state 40"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/453/mastermind_state-39.png" alt="Prediction explanation for state 40"></td>
 </tr>
 </table>
@@ -1222,7 +1222,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/453/mastermind_state-40.png" alt="Behaviour explanation for state 41"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/453/mastermind_state-40.png" alt="Performance explanation for state 41"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/453/mastermind_state-40.png" alt="Outcome explanation for state 41"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/453/mastermind_state-40.png" alt="Prediction explanation for state 41"></td>
 </tr>
 </table>
@@ -1232,7 +1232,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/453/mastermind_state-41.png" alt="Behaviour explanation for state 42"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/453/mastermind_state-41.png" alt="Performance explanation for state 42"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/453/mastermind_state-41.png" alt="Outcome explanation for state 42"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/453/mastermind_state-41.png" alt="Prediction explanation for state 42"></td>
 </tr>
 </table>
@@ -1242,7 +1242,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/453/mastermind_state-42.png" alt="Behaviour explanation for state 43"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/453/mastermind_state-42.png" alt="Performance explanation for state 43"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/453/mastermind_state-42.png" alt="Outcome explanation for state 43"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/453/mastermind_state-42.png" alt="Prediction explanation for state 43"></td>
 </tr>
 </table>
@@ -1252,7 +1252,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/453/mastermind_state-43.png" alt="Behaviour explanation for state 44"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/453/mastermind_state-43.png" alt="Performance explanation for state 44"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/453/mastermind_state-43.png" alt="Outcome explanation for state 44"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/453/mastermind_state-43.png" alt="Prediction explanation for state 44"></td>
 </tr>
 </table>
@@ -1262,7 +1262,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/453/mastermind_state-44.png" alt="Behaviour explanation for state 45"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/453/mastermind_state-44.png" alt="Performance explanation for state 45"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/453/mastermind_state-44.png" alt="Outcome explanation for state 45"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/453/mastermind_state-44.png" alt="Prediction explanation for state 45"></td>
 </tr>
 </table>
@@ -1272,7 +1272,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/453/mastermind_state-45.png" alt="Behaviour explanation for state 46"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/453/mastermind_state-45.png" alt="Performance explanation for state 46"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/453/mastermind_state-45.png" alt="Outcome explanation for state 46"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/453/mastermind_state-45.png" alt="Prediction explanation for state 46"></td>
 </tr>
 </table>
@@ -1282,7 +1282,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/453/mastermind_state-46.png" alt="Behaviour explanation for state 47"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/453/mastermind_state-46.png" alt="Performance explanation for state 47"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/453/mastermind_state-46.png" alt="Outcome explanation for state 47"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/453/mastermind_state-46.png" alt="Prediction explanation for state 47"></td>
 </tr>
 </table>
@@ -1292,7 +1292,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/453/mastermind_state-47.png" alt="Behaviour explanation for state 48"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/453/mastermind_state-47.png" alt="Performance explanation for state 48"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/453/mastermind_state-47.png" alt="Outcome explanation for state 48"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/453/mastermind_state-47.png" alt="Prediction explanation for state 48"></td>
 </tr>
 </table>
@@ -1302,7 +1302,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/453/mastermind_state-48.png" alt="Behaviour explanation for state 49"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/453/mastermind_state-48.png" alt="Performance explanation for state 49"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/453/mastermind_state-48.png" alt="Outcome explanation for state 49"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/453/mastermind_state-48.png" alt="Prediction explanation for state 49"></td>
 </tr>
 </table>
@@ -1312,7 +1312,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/453/mastermind_state-49.png" alt="Behaviour explanation for state 50"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/453/mastermind_state-49.png" alt="Performance explanation for state 50"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/453/mastermind_state-49.png" alt="Outcome explanation for state 50"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/453/mastermind_state-49.png" alt="Prediction explanation for state 50"></td>
 </tr>
 </table>
@@ -1322,7 +1322,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/453/mastermind_state-50.png" alt="Behaviour explanation for state 51"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/453/mastermind_state-50.png" alt="Performance explanation for state 51"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/453/mastermind_state-50.png" alt="Outcome explanation for state 51"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/453/mastermind_state-50.png" alt="Prediction explanation for state 51"></td>
 </tr>
 </table>
@@ -1332,7 +1332,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/453/mastermind_state-51.png" alt="Behaviour explanation for state 52"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/453/mastermind_state-51.png" alt="Performance explanation for state 52"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/453/mastermind_state-51.png" alt="Outcome explanation for state 52"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/453/mastermind_state-51.png" alt="Prediction explanation for state 52"></td>
 </tr>
 </table>
@@ -1342,7 +1342,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/453/mastermind_state-52.png" alt="Behaviour explanation for state 53"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/453/mastermind_state-52.png" alt="Performance explanation for state 53"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/453/mastermind_state-52.png" alt="Outcome explanation for state 53"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/453/mastermind_state-52.png" alt="Prediction explanation for state 53"></td>
 </tr>
 </table>
@@ -1352,7 +1352,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/453/mastermind_state-53.png" alt="Behaviour explanation for state 54"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/453/mastermind_state-53.png" alt="Performance explanation for state 54"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/453/mastermind_state-53.png" alt="Outcome explanation for state 54"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/453/mastermind_state-53.png" alt="Prediction explanation for state 54"></td>
 </tr>
 </table>
@@ -1362,7 +1362,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/453/mastermind_state-54.png" alt="Behaviour explanation for state 55"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/453/mastermind_state-54.png" alt="Performance explanation for state 55"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/453/mastermind_state-54.png" alt="Outcome explanation for state 55"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/453/mastermind_state-54.png" alt="Prediction explanation for state 55"></td>
 </tr>
 </table>
@@ -1372,7 +1372,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/453/mastermind_state-55.png" alt="Behaviour explanation for state 56"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/453/mastermind_state-55.png" alt="Performance explanation for state 56"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/453/mastermind_state-55.png" alt="Outcome explanation for state 56"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/453/mastermind_state-55.png" alt="Prediction explanation for state 56"></td>
 </tr>
 </table>
@@ -1382,7 +1382,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/453/mastermind_state-56.png" alt="Behaviour explanation for state 57"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/453/mastermind_state-56.png" alt="Performance explanation for state 57"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/453/mastermind_state-56.png" alt="Outcome explanation for state 57"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/453/mastermind_state-56.png" alt="Prediction explanation for state 57"></td>
 </tr>
 </table>
@@ -1392,7 +1392,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/453/mastermind_state-57.png" alt="Behaviour explanation for state 58"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/453/mastermind_state-57.png" alt="Performance explanation for state 58"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/453/mastermind_state-57.png" alt="Outcome explanation for state 58"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/453/mastermind_state-57.png" alt="Prediction explanation for state 58"></td>
 </tr>
 </table>
@@ -1402,7 +1402,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/453/mastermind_state-58.png" alt="Behaviour explanation for state 59"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/453/mastermind_state-58.png" alt="Performance explanation for state 59"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/453/mastermind_state-58.png" alt="Outcome explanation for state 59"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/453/mastermind_state-58.png" alt="Prediction explanation for state 59"></td>
 </tr>
 </table>
@@ -1412,7 +1412,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/453/mastermind_state-59.png" alt="Behaviour explanation for state 60"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/453/mastermind_state-59.png" alt="Performance explanation for state 60"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/453/mastermind_state-59.png" alt="Outcome explanation for state 60"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/453/mastermind_state-59.png" alt="Prediction explanation for state 60"></td>
 </tr>
 </table>
@@ -1422,7 +1422,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/453/mastermind_state-60.png" alt="Behaviour explanation for state 61"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/453/mastermind_state-60.png" alt="Performance explanation for state 61"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/453/mastermind_state-60.png" alt="Outcome explanation for state 61"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/453/mastermind_state-60.png" alt="Prediction explanation for state 61"></td>
 </tr>
 </table>
@@ -1432,7 +1432,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/453/mastermind_state-61.png" alt="Behaviour explanation for state 62"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/453/mastermind_state-61.png" alt="Performance explanation for state 62"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/453/mastermind_state-61.png" alt="Outcome explanation for state 62"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/453/mastermind_state-61.png" alt="Prediction explanation for state 62"></td>
 </tr>
 </table>
@@ -1442,7 +1442,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/453/mastermind_state-62.png" alt="Behaviour explanation for state 63"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/453/mastermind_state-62.png" alt="Performance explanation for state 63"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/453/mastermind_state-62.png" alt="Outcome explanation for state 63"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/453/mastermind_state-62.png" alt="Prediction explanation for state 63"></td>
 </tr>
 </table>
@@ -1452,7 +1452,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/453/mastermind_state-63.png" alt="Behaviour explanation for state 64"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/453/mastermind_state-63.png" alt="Performance explanation for state 64"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/453/mastermind_state-63.png" alt="Outcome explanation for state 64"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/453/mastermind_state-63.png" alt="Prediction explanation for state 64"></td>
 </tr>
 </table>
@@ -1462,7 +1462,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/453/mastermind_state-64.png" alt="Behaviour explanation for state 65"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/453/mastermind_state-64.png" alt="Performance explanation for state 65"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/453/mastermind_state-64.png" alt="Outcome explanation for state 65"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/453/mastermind_state-64.png" alt="Prediction explanation for state 65"></td>
 </tr>
 </table>
@@ -1472,7 +1472,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/453/mastermind_state-65.png" alt="Behaviour explanation for state 66"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/453/mastermind_state-65.png" alt="Performance explanation for state 66"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/453/mastermind_state-65.png" alt="Outcome explanation for state 66"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/453/mastermind_state-65.png" alt="Prediction explanation for state 66"></td>
 </tr>
 </table>
@@ -1482,7 +1482,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/453/mastermind_state-66.png" alt="Behaviour explanation for state 67"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/453/mastermind_state-66.png" alt="Performance explanation for state 67"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/453/mastermind_state-66.png" alt="Outcome explanation for state 67"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/453/mastermind_state-66.png" alt="Prediction explanation for state 67"></td>
 </tr>
 </table>
@@ -1492,7 +1492,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/453/mastermind_state-67.png" alt="Behaviour explanation for state 68"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/453/mastermind_state-67.png" alt="Performance explanation for state 68"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/453/mastermind_state-67.png" alt="Outcome explanation for state 68"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/453/mastermind_state-67.png" alt="Prediction explanation for state 68"></td>
 </tr>
 </table>
@@ -1502,7 +1502,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/453/mastermind_state-68.png" alt="Behaviour explanation for state 69"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/453/mastermind_state-68.png" alt="Performance explanation for state 69"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/453/mastermind_state-68.png" alt="Outcome explanation for state 69"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/453/mastermind_state-68.png" alt="Prediction explanation for state 69"></td>
 </tr>
 </table>
@@ -1512,7 +1512,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/453/mastermind_state-69.png" alt="Behaviour explanation for state 70"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/453/mastermind_state-69.png" alt="Performance explanation for state 70"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/453/mastermind_state-69.png" alt="Outcome explanation for state 70"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/453/mastermind_state-69.png" alt="Prediction explanation for state 70"></td>
 </tr>
 </table>
@@ -1522,7 +1522,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/453/mastermind_state-70.png" alt="Behaviour explanation for state 71"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/453/mastermind_state-70.png" alt="Performance explanation for state 71"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/453/mastermind_state-70.png" alt="Outcome explanation for state 71"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/453/mastermind_state-70.png" alt="Prediction explanation for state 71"></td>
 </tr>
 </table>
@@ -1532,7 +1532,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/453/mastermind_state-71.png" alt="Behaviour explanation for state 72"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/453/mastermind_state-71.png" alt="Performance explanation for state 72"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/453/mastermind_state-71.png" alt="Outcome explanation for state 72"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/453/mastermind_state-71.png" alt="Prediction explanation for state 72"></td>
 </tr>
 </table>
@@ -1542,7 +1542,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/453/mastermind_state-72.png" alt="Behaviour explanation for state 73"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/453/mastermind_state-72.png" alt="Performance explanation for state 73"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/453/mastermind_state-72.png" alt="Outcome explanation for state 73"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/453/mastermind_state-72.png" alt="Prediction explanation for state 73"></td>
 </tr>
 </table>
@@ -1552,7 +1552,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/453/mastermind_state-73.png" alt="Behaviour explanation for state 74"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/453/mastermind_state-73.png" alt="Performance explanation for state 74"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/453/mastermind_state-73.png" alt="Outcome explanation for state 74"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/453/mastermind_state-73.png" alt="Prediction explanation for state 74"></td>
 </tr>
 </table>
@@ -1562,7 +1562,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/453/mastermind_state-74.png" alt="Behaviour explanation for state 75"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/453/mastermind_state-74.png" alt="Performance explanation for state 75"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/453/mastermind_state-74.png" alt="Outcome explanation for state 75"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/453/mastermind_state-74.png" alt="Prediction explanation for state 75"></td>
 </tr>
 </table>
@@ -1572,7 +1572,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/453/mastermind_state-75.png" alt="Behaviour explanation for state 76"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/453/mastermind_state-75.png" alt="Performance explanation for state 76"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/453/mastermind_state-75.png" alt="Outcome explanation for state 76"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/453/mastermind_state-75.png" alt="Prediction explanation for state 76"></td>
 </tr>
 </table>
@@ -1582,7 +1582,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/453/mastermind_state-76.png" alt="Behaviour explanation for state 77"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/453/mastermind_state-76.png" alt="Performance explanation for state 77"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/453/mastermind_state-76.png" alt="Outcome explanation for state 77"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/453/mastermind_state-76.png" alt="Prediction explanation for state 77"></td>
 </tr>
 </table>
@@ -1592,7 +1592,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/453/mastermind_state-77.png" alt="Behaviour explanation for state 78"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/453/mastermind_state-77.png" alt="Performance explanation for state 78"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/453/mastermind_state-77.png" alt="Outcome explanation for state 78"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/453/mastermind_state-77.png" alt="Prediction explanation for state 78"></td>
 </tr>
 </table>
@@ -1602,7 +1602,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/453/mastermind_state-78.png" alt="Behaviour explanation for state 79"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/453/mastermind_state-78.png" alt="Performance explanation for state 79"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/453/mastermind_state-78.png" alt="Outcome explanation for state 79"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/453/mastermind_state-78.png" alt="Prediction explanation for state 79"></td>
 </tr>
 </table>
@@ -1612,7 +1612,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/453/mastermind_state-79.png" alt="Behaviour explanation for state 80"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/453/mastermind_state-79.png" alt="Performance explanation for state 80"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/453/mastermind_state-79.png" alt="Outcome explanation for state 80"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/453/mastermind_state-79.png" alt="Prediction explanation for state 80"></td>
 </tr>
 </table>
@@ -1622,7 +1622,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/453/mastermind_state-80.png" alt="Behaviour explanation for state 81"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/453/mastermind_state-80.png" alt="Performance explanation for state 81"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/453/mastermind_state-80.png" alt="Outcome explanation for state 81"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/453/mastermind_state-80.png" alt="Prediction explanation for state 81"></td>
 </tr>
 </table>
@@ -1632,7 +1632,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/453/mastermind_state-81.png" alt="Behaviour explanation for state 82"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/453/mastermind_state-81.png" alt="Performance explanation for state 82"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/453/mastermind_state-81.png" alt="Outcome explanation for state 82"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/453/mastermind_state-81.png" alt="Prediction explanation for state 82"></td>
 </tr>
 </table>
@@ -1642,7 +1642,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/453/mastermind_state-82.png" alt="Behaviour explanation for state 83"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/453/mastermind_state-82.png" alt="Performance explanation for state 83"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/453/mastermind_state-82.png" alt="Outcome explanation for state 83"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/453/mastermind_state-82.png" alt="Prediction explanation for state 83"></td>
 </tr>
 </table>
@@ -1652,7 +1652,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/453/mastermind_state-83.png" alt="Behaviour explanation for state 84"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/453/mastermind_state-83.png" alt="Performance explanation for state 84"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/453/mastermind_state-83.png" alt="Outcome explanation for state 84"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/453/mastermind_state-83.png" alt="Prediction explanation for state 84"></td>
 </tr>
 </table>
@@ -1662,7 +1662,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/453/mastermind_state-84.png" alt="Behaviour explanation for state 85"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/453/mastermind_state-84.png" alt="Performance explanation for state 85"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/453/mastermind_state-84.png" alt="Outcome explanation for state 85"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/453/mastermind_state-84.png" alt="Prediction explanation for state 85"></td>
 </tr>
 </table>
@@ -1672,7 +1672,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/453/mastermind_state-85.png" alt="Behaviour explanation for state 86"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/453/mastermind_state-85.png" alt="Performance explanation for state 86"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/453/mastermind_state-85.png" alt="Outcome explanation for state 86"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/453/mastermind_state-85.png" alt="Prediction explanation for state 86"></td>
 </tr>
 </table>
@@ -1682,7 +1682,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/453/mastermind_state-86.png" alt="Behaviour explanation for state 87"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/453/mastermind_state-86.png" alt="Performance explanation for state 87"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/453/mastermind_state-86.png" alt="Outcome explanation for state 87"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/453/mastermind_state-86.png" alt="Prediction explanation for state 87"></td>
 </tr>
 </table>
@@ -1692,7 +1692,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/453/mastermind_state-87.png" alt="Behaviour explanation for state 88"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/453/mastermind_state-87.png" alt="Performance explanation for state 88"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/453/mastermind_state-87.png" alt="Outcome explanation for state 88"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/453/mastermind_state-87.png" alt="Prediction explanation for state 88"></td>
 </tr>
 </table>
@@ -1720,7 +1720,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/463/mastermind_state-0.png" alt="Behaviour explanation for state 1"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/463/mastermind_state-0.png" alt="Performance explanation for state 1"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/463/mastermind_state-0.png" alt="Outcome explanation for state 1"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/463/mastermind_state-0.png" alt="Prediction explanation for state 1"></td>
 </tr>
 </table>
@@ -1730,7 +1730,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/463/mastermind_state-1.png" alt="Behaviour explanation for state 2"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/463/mastermind_state-1.png" alt="Performance explanation for state 2"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/463/mastermind_state-1.png" alt="Outcome explanation for state 2"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/463/mastermind_state-1.png" alt="Prediction explanation for state 2"></td>
 </tr>
 </table>
@@ -1740,7 +1740,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/463/mastermind_state-2.png" alt="Behaviour explanation for state 3"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/463/mastermind_state-2.png" alt="Performance explanation for state 3"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/463/mastermind_state-2.png" alt="Outcome explanation for state 3"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/463/mastermind_state-2.png" alt="Prediction explanation for state 3"></td>
 </tr>
 </table>
@@ -1750,7 +1750,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/463/mastermind_state-3.png" alt="Behaviour explanation for state 4"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/463/mastermind_state-3.png" alt="Performance explanation for state 4"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/463/mastermind_state-3.png" alt="Outcome explanation for state 4"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/463/mastermind_state-3.png" alt="Prediction explanation for state 4"></td>
 </tr>
 </table>
@@ -1760,7 +1760,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/463/mastermind_state-4.png" alt="Behaviour explanation for state 5"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/463/mastermind_state-4.png" alt="Performance explanation for state 5"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/463/mastermind_state-4.png" alt="Outcome explanation for state 5"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/463/mastermind_state-4.png" alt="Prediction explanation for state 5"></td>
 </tr>
 </table>
@@ -1770,7 +1770,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/463/mastermind_state-5.png" alt="Behaviour explanation for state 6"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/463/mastermind_state-5.png" alt="Performance explanation for state 6"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/463/mastermind_state-5.png" alt="Outcome explanation for state 6"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/463/mastermind_state-5.png" alt="Prediction explanation for state 6"></td>
 </tr>
 </table>
@@ -1780,7 +1780,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/463/mastermind_state-6.png" alt="Behaviour explanation for state 7"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/463/mastermind_state-6.png" alt="Performance explanation for state 7"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/463/mastermind_state-6.png" alt="Outcome explanation for state 7"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/463/mastermind_state-6.png" alt="Prediction explanation for state 7"></td>
 </tr>
 </table>
@@ -1790,7 +1790,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/463/mastermind_state-7.png" alt="Behaviour explanation for state 8"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/463/mastermind_state-7.png" alt="Performance explanation for state 8"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/463/mastermind_state-7.png" alt="Outcome explanation for state 8"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/463/mastermind_state-7.png" alt="Prediction explanation for state 8"></td>
 </tr>
 </table>
@@ -1800,7 +1800,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/463/mastermind_state-8.png" alt="Behaviour explanation for state 9"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/463/mastermind_state-8.png" alt="Performance explanation for state 9"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/463/mastermind_state-8.png" alt="Outcome explanation for state 9"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/463/mastermind_state-8.png" alt="Prediction explanation for state 9"></td>
 </tr>
 </table>
@@ -1810,7 +1810,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/463/mastermind_state-9.png" alt="Behaviour explanation for state 10"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/463/mastermind_state-9.png" alt="Performance explanation for state 10"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/463/mastermind_state-9.png" alt="Outcome explanation for state 10"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/463/mastermind_state-9.png" alt="Prediction explanation for state 10"></td>
 </tr>
 </table>
@@ -1820,7 +1820,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/463/mastermind_state-10.png" alt="Behaviour explanation for state 11"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/463/mastermind_state-10.png" alt="Performance explanation for state 11"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/463/mastermind_state-10.png" alt="Outcome explanation for state 11"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/463/mastermind_state-10.png" alt="Prediction explanation for state 11"></td>
 </tr>
 </table>
@@ -1830,7 +1830,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/463/mastermind_state-11.png" alt="Behaviour explanation for state 12"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/463/mastermind_state-11.png" alt="Performance explanation for state 12"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/463/mastermind_state-11.png" alt="Outcome explanation for state 12"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/463/mastermind_state-11.png" alt="Prediction explanation for state 12"></td>
 </tr>
 </table>
@@ -1840,7 +1840,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/463/mastermind_state-12.png" alt="Behaviour explanation for state 13"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/463/mastermind_state-12.png" alt="Performance explanation for state 13"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/463/mastermind_state-12.png" alt="Outcome explanation for state 13"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/463/mastermind_state-12.png" alt="Prediction explanation for state 13"></td>
 </tr>
 </table>
@@ -1850,7 +1850,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/463/mastermind_state-13.png" alt="Behaviour explanation for state 14"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/463/mastermind_state-13.png" alt="Performance explanation for state 14"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/463/mastermind_state-13.png" alt="Outcome explanation for state 14"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/463/mastermind_state-13.png" alt="Prediction explanation for state 14"></td>
 </tr>
 </table>
@@ -1860,7 +1860,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/463/mastermind_state-14.png" alt="Behaviour explanation for state 15"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/463/mastermind_state-14.png" alt="Performance explanation for state 15"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/463/mastermind_state-14.png" alt="Outcome explanation for state 15"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/463/mastermind_state-14.png" alt="Prediction explanation for state 15"></td>
 </tr>
 </table>
@@ -1870,7 +1870,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/463/mastermind_state-15.png" alt="Behaviour explanation for state 16"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/463/mastermind_state-15.png" alt="Performance explanation for state 16"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/463/mastermind_state-15.png" alt="Outcome explanation for state 16"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/463/mastermind_state-15.png" alt="Prediction explanation for state 16"></td>
 </tr>
 </table>
@@ -1880,7 +1880,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/463/mastermind_state-16.png" alt="Behaviour explanation for state 17"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/463/mastermind_state-16.png" alt="Performance explanation for state 17"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/463/mastermind_state-16.png" alt="Outcome explanation for state 17"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/463/mastermind_state-16.png" alt="Prediction explanation for state 17"></td>
 </tr>
 </table>
@@ -1890,7 +1890,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/463/mastermind_state-17.png" alt="Behaviour explanation for state 18"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/463/mastermind_state-17.png" alt="Performance explanation for state 18"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/463/mastermind_state-17.png" alt="Outcome explanation for state 18"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/463/mastermind_state-17.png" alt="Prediction explanation for state 18"></td>
 </tr>
 </table>
@@ -1900,7 +1900,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/463/mastermind_state-18.png" alt="Behaviour explanation for state 19"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/463/mastermind_state-18.png" alt="Performance explanation for state 19"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/463/mastermind_state-18.png" alt="Outcome explanation for state 19"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/463/mastermind_state-18.png" alt="Prediction explanation for state 19"></td>
 </tr>
 </table>
@@ -1910,7 +1910,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/463/mastermind_state-19.png" alt="Behaviour explanation for state 20"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/463/mastermind_state-19.png" alt="Performance explanation for state 20"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/463/mastermind_state-19.png" alt="Outcome explanation for state 20"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/463/mastermind_state-19.png" alt="Prediction explanation for state 20"></td>
 </tr>
 </table>
@@ -1920,7 +1920,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/463/mastermind_state-20.png" alt="Behaviour explanation for state 21"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/463/mastermind_state-20.png" alt="Performance explanation for state 21"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/463/mastermind_state-20.png" alt="Outcome explanation for state 21"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/463/mastermind_state-20.png" alt="Prediction explanation for state 21"></td>
 </tr>
 </table>
@@ -1930,7 +1930,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/463/mastermind_state-21.png" alt="Behaviour explanation for state 22"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/463/mastermind_state-21.png" alt="Performance explanation for state 22"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/463/mastermind_state-21.png" alt="Outcome explanation for state 22"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/463/mastermind_state-21.png" alt="Prediction explanation for state 22"></td>
 </tr>
 </table>
@@ -1940,7 +1940,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/463/mastermind_state-22.png" alt="Behaviour explanation for state 23"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/463/mastermind_state-22.png" alt="Performance explanation for state 23"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/463/mastermind_state-22.png" alt="Outcome explanation for state 23"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/463/mastermind_state-22.png" alt="Prediction explanation for state 23"></td>
 </tr>
 </table>
@@ -1950,7 +1950,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/463/mastermind_state-23.png" alt="Behaviour explanation for state 24"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/463/mastermind_state-23.png" alt="Performance explanation for state 24"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/463/mastermind_state-23.png" alt="Outcome explanation for state 24"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/463/mastermind_state-23.png" alt="Prediction explanation for state 24"></td>
 </tr>
 </table>
@@ -1960,7 +1960,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/463/mastermind_state-24.png" alt="Behaviour explanation for state 25"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/463/mastermind_state-24.png" alt="Performance explanation for state 25"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/463/mastermind_state-24.png" alt="Outcome explanation for state 25"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/463/mastermind_state-24.png" alt="Prediction explanation for state 25"></td>
 </tr>
 </table>
@@ -1970,7 +1970,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/463/mastermind_state-25.png" alt="Behaviour explanation for state 26"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/463/mastermind_state-25.png" alt="Performance explanation for state 26"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/463/mastermind_state-25.png" alt="Outcome explanation for state 26"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/463/mastermind_state-25.png" alt="Prediction explanation for state 26"></td>
 </tr>
 </table>
@@ -1980,7 +1980,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/463/mastermind_state-26.png" alt="Behaviour explanation for state 27"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/463/mastermind_state-26.png" alt="Performance explanation for state 27"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/463/mastermind_state-26.png" alt="Outcome explanation for state 27"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/463/mastermind_state-26.png" alt="Prediction explanation for state 27"></td>
 </tr>
 </table>
@@ -1990,7 +1990,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/463/mastermind_state-27.png" alt="Behaviour explanation for state 28"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/463/mastermind_state-27.png" alt="Performance explanation for state 28"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/463/mastermind_state-27.png" alt="Outcome explanation for state 28"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/463/mastermind_state-27.png" alt="Prediction explanation for state 28"></td>
 </tr>
 </table>
@@ -2000,7 +2000,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/463/mastermind_state-28.png" alt="Behaviour explanation for state 29"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/463/mastermind_state-28.png" alt="Performance explanation for state 29"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/463/mastermind_state-28.png" alt="Outcome explanation for state 29"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/463/mastermind_state-28.png" alt="Prediction explanation for state 29"></td>
 </tr>
 </table>
@@ -2010,7 +2010,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/463/mastermind_state-29.png" alt="Behaviour explanation for state 30"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/463/mastermind_state-29.png" alt="Performance explanation for state 30"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/463/mastermind_state-29.png" alt="Outcome explanation for state 30"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/463/mastermind_state-29.png" alt="Prediction explanation for state 30"></td>
 </tr>
 </table>
@@ -2020,7 +2020,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/463/mastermind_state-30.png" alt="Behaviour explanation for state 31"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/463/mastermind_state-30.png" alt="Performance explanation for state 31"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/463/mastermind_state-30.png" alt="Outcome explanation for state 31"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/463/mastermind_state-30.png" alt="Prediction explanation for state 31"></td>
 </tr>
 </table>
@@ -2030,7 +2030,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/463/mastermind_state-31.png" alt="Behaviour explanation for state 32"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/463/mastermind_state-31.png" alt="Performance explanation for state 32"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/463/mastermind_state-31.png" alt="Outcome explanation for state 32"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/463/mastermind_state-31.png" alt="Prediction explanation for state 32"></td>
 </tr>
 </table>
@@ -2040,7 +2040,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/463/mastermind_state-32.png" alt="Behaviour explanation for state 33"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/463/mastermind_state-32.png" alt="Performance explanation for state 33"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/463/mastermind_state-32.png" alt="Outcome explanation for state 33"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/463/mastermind_state-32.png" alt="Prediction explanation for state 33"></td>
 </tr>
 </table>
@@ -2050,7 +2050,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/463/mastermind_state-33.png" alt="Behaviour explanation for state 34"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/463/mastermind_state-33.png" alt="Performance explanation for state 34"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/463/mastermind_state-33.png" alt="Outcome explanation for state 34"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/463/mastermind_state-33.png" alt="Prediction explanation for state 34"></td>
 </tr>
 </table>
@@ -2060,7 +2060,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/463/mastermind_state-34.png" alt="Behaviour explanation for state 35"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/463/mastermind_state-34.png" alt="Performance explanation for state 35"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/463/mastermind_state-34.png" alt="Outcome explanation for state 35"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/463/mastermind_state-34.png" alt="Prediction explanation for state 35"></td>
 </tr>
 </table>
@@ -2070,7 +2070,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/463/mastermind_state-35.png" alt="Behaviour explanation for state 36"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/463/mastermind_state-35.png" alt="Performance explanation for state 36"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/463/mastermind_state-35.png" alt="Outcome explanation for state 36"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/463/mastermind_state-35.png" alt="Prediction explanation for state 36"></td>
 </tr>
 </table>
@@ -2080,7 +2080,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/463/mastermind_state-36.png" alt="Behaviour explanation for state 37"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/463/mastermind_state-36.png" alt="Performance explanation for state 37"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/463/mastermind_state-36.png" alt="Outcome explanation for state 37"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/463/mastermind_state-36.png" alt="Prediction explanation for state 37"></td>
 </tr>
 </table>
@@ -2090,7 +2090,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/463/mastermind_state-37.png" alt="Behaviour explanation for state 38"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/463/mastermind_state-37.png" alt="Performance explanation for state 38"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/463/mastermind_state-37.png" alt="Outcome explanation for state 38"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/463/mastermind_state-37.png" alt="Prediction explanation for state 38"></td>
 </tr>
 </table>
@@ -2100,7 +2100,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/463/mastermind_state-38.png" alt="Behaviour explanation for state 39"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/463/mastermind_state-38.png" alt="Performance explanation for state 39"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/463/mastermind_state-38.png" alt="Outcome explanation for state 39"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/463/mastermind_state-38.png" alt="Prediction explanation for state 39"></td>
 </tr>
 </table>
@@ -2110,7 +2110,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/463/mastermind_state-39.png" alt="Behaviour explanation for state 40"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/463/mastermind_state-39.png" alt="Performance explanation for state 40"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/463/mastermind_state-39.png" alt="Outcome explanation for state 40"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/463/mastermind_state-39.png" alt="Prediction explanation for state 40"></td>
 </tr>
 </table>
@@ -2120,7 +2120,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/463/mastermind_state-40.png" alt="Behaviour explanation for state 41"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/463/mastermind_state-40.png" alt="Performance explanation for state 41"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/463/mastermind_state-40.png" alt="Outcome explanation for state 41"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/463/mastermind_state-40.png" alt="Prediction explanation for state 41"></td>
 </tr>
 </table>
@@ -2130,7 +2130,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/463/mastermind_state-41.png" alt="Behaviour explanation for state 42"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/463/mastermind_state-41.png" alt="Performance explanation for state 42"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/463/mastermind_state-41.png" alt="Outcome explanation for state 42"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/463/mastermind_state-41.png" alt="Prediction explanation for state 42"></td>
 </tr>
 </table>
@@ -2140,7 +2140,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/463/mastermind_state-42.png" alt="Behaviour explanation for state 43"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/463/mastermind_state-42.png" alt="Performance explanation for state 43"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/463/mastermind_state-42.png" alt="Outcome explanation for state 43"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/463/mastermind_state-42.png" alt="Prediction explanation for state 43"></td>
 </tr>
 </table>
@@ -2150,7 +2150,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/463/mastermind_state-43.png" alt="Behaviour explanation for state 44"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/463/mastermind_state-43.png" alt="Performance explanation for state 44"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/463/mastermind_state-43.png" alt="Outcome explanation for state 44"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/463/mastermind_state-43.png" alt="Prediction explanation for state 44"></td>
 </tr>
 </table>
@@ -2160,7 +2160,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/463/mastermind_state-44.png" alt="Behaviour explanation for state 45"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/463/mastermind_state-44.png" alt="Performance explanation for state 45"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/463/mastermind_state-44.png" alt="Outcome explanation for state 45"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/463/mastermind_state-44.png" alt="Prediction explanation for state 45"></td>
 </tr>
 </table>
@@ -2170,7 +2170,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/463/mastermind_state-45.png" alt="Behaviour explanation for state 46"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/463/mastermind_state-45.png" alt="Performance explanation for state 46"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/463/mastermind_state-45.png" alt="Outcome explanation for state 46"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/463/mastermind_state-45.png" alt="Prediction explanation for state 46"></td>
 </tr>
 </table>
@@ -2180,7 +2180,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/463/mastermind_state-46.png" alt="Behaviour explanation for state 47"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/463/mastermind_state-46.png" alt="Performance explanation for state 47"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/463/mastermind_state-46.png" alt="Outcome explanation for state 47"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/463/mastermind_state-46.png" alt="Prediction explanation for state 47"></td>
 </tr>
 </table>
@@ -2190,7 +2190,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/463/mastermind_state-47.png" alt="Behaviour explanation for state 48"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/463/mastermind_state-47.png" alt="Performance explanation for state 48"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/463/mastermind_state-47.png" alt="Outcome explanation for state 48"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/463/mastermind_state-47.png" alt="Prediction explanation for state 48"></td>
 </tr>
 </table>
@@ -2200,7 +2200,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/463/mastermind_state-48.png" alt="Behaviour explanation for state 49"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/463/mastermind_state-48.png" alt="Performance explanation for state 49"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/463/mastermind_state-48.png" alt="Outcome explanation for state 49"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/463/mastermind_state-48.png" alt="Prediction explanation for state 49"></td>
 </tr>
 </table>
@@ -2210,7 +2210,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/463/mastermind_state-49.png" alt="Behaviour explanation for state 50"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/463/mastermind_state-49.png" alt="Performance explanation for state 50"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/463/mastermind_state-49.png" alt="Outcome explanation for state 50"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/463/mastermind_state-49.png" alt="Prediction explanation for state 50"></td>
 </tr>
 </table>
@@ -2220,7 +2220,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/463/mastermind_state-50.png" alt="Behaviour explanation for state 51"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/463/mastermind_state-50.png" alt="Performance explanation for state 51"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/463/mastermind_state-50.png" alt="Outcome explanation for state 51"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/463/mastermind_state-50.png" alt="Prediction explanation for state 51"></td>
 </tr>
 </table>
@@ -2230,7 +2230,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/463/mastermind_state-51.png" alt="Behaviour explanation for state 52"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/463/mastermind_state-51.png" alt="Performance explanation for state 52"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/463/mastermind_state-51.png" alt="Outcome explanation for state 52"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/463/mastermind_state-51.png" alt="Prediction explanation for state 52"></td>
 </tr>
 </table>
@@ -2240,7 +2240,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/463/mastermind_state-52.png" alt="Behaviour explanation for state 53"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/463/mastermind_state-52.png" alt="Performance explanation for state 53"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/463/mastermind_state-52.png" alt="Outcome explanation for state 53"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/463/mastermind_state-52.png" alt="Prediction explanation for state 53"></td>
 </tr>
 </table>
@@ -2250,7 +2250,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/463/mastermind_state-53.png" alt="Behaviour explanation for state 54"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/463/mastermind_state-53.png" alt="Performance explanation for state 54"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/463/mastermind_state-53.png" alt="Outcome explanation for state 54"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/463/mastermind_state-53.png" alt="Prediction explanation for state 54"></td>
 </tr>
 </table>
@@ -2260,7 +2260,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/463/mastermind_state-54.png" alt="Behaviour explanation for state 55"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/463/mastermind_state-54.png" alt="Performance explanation for state 55"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/463/mastermind_state-54.png" alt="Outcome explanation for state 55"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/463/mastermind_state-54.png" alt="Prediction explanation for state 55"></td>
 </tr>
 </table>
@@ -2270,7 +2270,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/463/mastermind_state-55.png" alt="Behaviour explanation for state 56"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/463/mastermind_state-55.png" alt="Performance explanation for state 56"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/463/mastermind_state-55.png" alt="Outcome explanation for state 56"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/463/mastermind_state-55.png" alt="Prediction explanation for state 56"></td>
 </tr>
 </table>
@@ -2280,7 +2280,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/463/mastermind_state-56.png" alt="Behaviour explanation for state 57"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/463/mastermind_state-56.png" alt="Performance explanation for state 57"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/463/mastermind_state-56.png" alt="Outcome explanation for state 57"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/463/mastermind_state-56.png" alt="Prediction explanation for state 57"></td>
 </tr>
 </table>
@@ -2290,7 +2290,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/463/mastermind_state-57.png" alt="Behaviour explanation for state 58"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/463/mastermind_state-57.png" alt="Performance explanation for state 58"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/463/mastermind_state-57.png" alt="Outcome explanation for state 58"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/463/mastermind_state-57.png" alt="Prediction explanation for state 58"></td>
 </tr>
 </table>
@@ -2300,7 +2300,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/463/mastermind_state-58.png" alt="Behaviour explanation for state 59"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/463/mastermind_state-58.png" alt="Performance explanation for state 59"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/463/mastermind_state-58.png" alt="Outcome explanation for state 59"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/463/mastermind_state-58.png" alt="Prediction explanation for state 59"></td>
 </tr>
 </table>
@@ -2310,7 +2310,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/463/mastermind_state-59.png" alt="Behaviour explanation for state 60"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/463/mastermind_state-59.png" alt="Performance explanation for state 60"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/463/mastermind_state-59.png" alt="Outcome explanation for state 60"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/463/mastermind_state-59.png" alt="Prediction explanation for state 60"></td>
 </tr>
 </table>
@@ -2320,7 +2320,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/463/mastermind_state-60.png" alt="Behaviour explanation for state 61"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/463/mastermind_state-60.png" alt="Performance explanation for state 61"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/463/mastermind_state-60.png" alt="Outcome explanation for state 61"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/463/mastermind_state-60.png" alt="Prediction explanation for state 61"></td>
 </tr>
 </table>
@@ -2330,7 +2330,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/463/mastermind_state-61.png" alt="Behaviour explanation for state 62"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/463/mastermind_state-61.png" alt="Performance explanation for state 62"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/463/mastermind_state-61.png" alt="Outcome explanation for state 62"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/463/mastermind_state-61.png" alt="Prediction explanation for state 62"></td>
 </tr>
 </table>
@@ -2340,7 +2340,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/463/mastermind_state-62.png" alt="Behaviour explanation for state 63"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/463/mastermind_state-62.png" alt="Performance explanation for state 63"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/463/mastermind_state-62.png" alt="Outcome explanation for state 63"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/463/mastermind_state-62.png" alt="Prediction explanation for state 63"></td>
 </tr>
 </table>
@@ -2350,7 +2350,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/463/mastermind_state-63.png" alt="Behaviour explanation for state 64"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/463/mastermind_state-63.png" alt="Performance explanation for state 64"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/463/mastermind_state-63.png" alt="Outcome explanation for state 64"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/463/mastermind_state-63.png" alt="Prediction explanation for state 64"></td>
 </tr>
 </table>
@@ -2360,7 +2360,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/463/mastermind_state-64.png" alt="Behaviour explanation for state 65"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/463/mastermind_state-64.png" alt="Performance explanation for state 65"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/463/mastermind_state-64.png" alt="Outcome explanation for state 65"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/463/mastermind_state-64.png" alt="Prediction explanation for state 65"></td>
 </tr>
 </table>
@@ -2370,7 +2370,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/463/mastermind_state-65.png" alt="Behaviour explanation for state 66"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/463/mastermind_state-65.png" alt="Performance explanation for state 66"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/463/mastermind_state-65.png" alt="Outcome explanation for state 66"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/463/mastermind_state-65.png" alt="Prediction explanation for state 66"></td>
 </tr>
 </table>
@@ -2380,7 +2380,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/463/mastermind_state-66.png" alt="Behaviour explanation for state 67"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/463/mastermind_state-66.png" alt="Performance explanation for state 67"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/463/mastermind_state-66.png" alt="Outcome explanation for state 67"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/463/mastermind_state-66.png" alt="Prediction explanation for state 67"></td>
 </tr>
 </table>
@@ -2390,7 +2390,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/463/mastermind_state-67.png" alt="Behaviour explanation for state 68"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/463/mastermind_state-67.png" alt="Performance explanation for state 68"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/463/mastermind_state-67.png" alt="Outcome explanation for state 68"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/463/mastermind_state-67.png" alt="Prediction explanation for state 68"></td>
 </tr>
 </table>
@@ -2400,7 +2400,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/463/mastermind_state-68.png" alt="Behaviour explanation for state 69"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/463/mastermind_state-68.png" alt="Performance explanation for state 69"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/463/mastermind_state-68.png" alt="Outcome explanation for state 69"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/463/mastermind_state-68.png" alt="Prediction explanation for state 69"></td>
 </tr>
 </table>
@@ -2410,7 +2410,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/463/mastermind_state-69.png" alt="Behaviour explanation for state 70"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/463/mastermind_state-69.png" alt="Performance explanation for state 70"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/463/mastermind_state-69.png" alt="Outcome explanation for state 70"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/463/mastermind_state-69.png" alt="Prediction explanation for state 70"></td>
 </tr>
 </table>
@@ -2420,7 +2420,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/463/mastermind_state-70.png" alt="Behaviour explanation for state 71"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/463/mastermind_state-70.png" alt="Performance explanation for state 71"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/463/mastermind_state-70.png" alt="Outcome explanation for state 71"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/463/mastermind_state-70.png" alt="Prediction explanation for state 71"></td>
 </tr>
 </table>
@@ -2430,7 +2430,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/463/mastermind_state-71.png" alt="Behaviour explanation for state 72"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/463/mastermind_state-71.png" alt="Performance explanation for state 72"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/463/mastermind_state-71.png" alt="Outcome explanation for state 72"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/463/mastermind_state-71.png" alt="Prediction explanation for state 72"></td>
 </tr>
 </table>
@@ -2440,7 +2440,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/463/mastermind_state-72.png" alt="Behaviour explanation for state 73"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/463/mastermind_state-72.png" alt="Performance explanation for state 73"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/463/mastermind_state-72.png" alt="Outcome explanation for state 73"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/463/mastermind_state-72.png" alt="Prediction explanation for state 73"></td>
 </tr>
 </table>
@@ -2450,7 +2450,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/463/mastermind_state-73.png" alt="Behaviour explanation for state 74"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/463/mastermind_state-73.png" alt="Performance explanation for state 74"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/463/mastermind_state-73.png" alt="Outcome explanation for state 74"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/463/mastermind_state-73.png" alt="Prediction explanation for state 74"></td>
 </tr>
 </table>
@@ -2460,7 +2460,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/463/mastermind_state-74.png" alt="Behaviour explanation for state 75"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/463/mastermind_state-74.png" alt="Performance explanation for state 75"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/463/mastermind_state-74.png" alt="Outcome explanation for state 75"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/463/mastermind_state-74.png" alt="Prediction explanation for state 75"></td>
 </tr>
 </table>
@@ -2470,7 +2470,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/463/mastermind_state-75.png" alt="Behaviour explanation for state 76"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/463/mastermind_state-75.png" alt="Performance explanation for state 76"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/463/mastermind_state-75.png" alt="Outcome explanation for state 76"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/463/mastermind_state-75.png" alt="Prediction explanation for state 76"></td>
 </tr>
 </table>
@@ -2480,7 +2480,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/463/mastermind_state-76.png" alt="Behaviour explanation for state 77"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/463/mastermind_state-76.png" alt="Performance explanation for state 77"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/463/mastermind_state-76.png" alt="Outcome explanation for state 77"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/463/mastermind_state-76.png" alt="Prediction explanation for state 77"></td>
 </tr>
 </table>
@@ -2490,7 +2490,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/463/mastermind_state-77.png" alt="Behaviour explanation for state 78"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/463/mastermind_state-77.png" alt="Performance explanation for state 78"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/463/mastermind_state-77.png" alt="Outcome explanation for state 78"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/463/mastermind_state-77.png" alt="Prediction explanation for state 78"></td>
 </tr>
 </table>
@@ -2500,7 +2500,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/463/mastermind_state-78.png" alt="Behaviour explanation for state 79"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/463/mastermind_state-78.png" alt="Performance explanation for state 79"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/463/mastermind_state-78.png" alt="Outcome explanation for state 79"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/463/mastermind_state-78.png" alt="Prediction explanation for state 79"></td>
 </tr>
 </table>
@@ -2510,7 +2510,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/463/mastermind_state-79.png" alt="Behaviour explanation for state 80"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/463/mastermind_state-79.png" alt="Performance explanation for state 80"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/463/mastermind_state-79.png" alt="Outcome explanation for state 80"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/463/mastermind_state-79.png" alt="Prediction explanation for state 80"></td>
 </tr>
 </table>
@@ -2520,7 +2520,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/463/mastermind_state-80.png" alt="Behaviour explanation for state 81"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/463/mastermind_state-80.png" alt="Performance explanation for state 81"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/463/mastermind_state-80.png" alt="Outcome explanation for state 81"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/463/mastermind_state-80.png" alt="Prediction explanation for state 81"></td>
 </tr>
 </table>
@@ -2530,7 +2530,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/463/mastermind_state-81.png" alt="Behaviour explanation for state 82"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/463/mastermind_state-81.png" alt="Performance explanation for state 82"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/463/mastermind_state-81.png" alt="Outcome explanation for state 82"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/463/mastermind_state-81.png" alt="Prediction explanation for state 82"></td>
 </tr>
 </table>
@@ -2540,7 +2540,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/463/mastermind_state-82.png" alt="Behaviour explanation for state 83"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/463/mastermind_state-82.png" alt="Performance explanation for state 83"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/463/mastermind_state-82.png" alt="Outcome explanation for state 83"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/463/mastermind_state-82.png" alt="Prediction explanation for state 83"></td>
 </tr>
 </table>
@@ -2550,7 +2550,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/463/mastermind_state-83.png" alt="Behaviour explanation for state 84"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/463/mastermind_state-83.png" alt="Performance explanation for state 84"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/463/mastermind_state-83.png" alt="Outcome explanation for state 84"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/463/mastermind_state-83.png" alt="Prediction explanation for state 84"></td>
 </tr>
 </table>
@@ -2560,7 +2560,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/463/mastermind_state-84.png" alt="Behaviour explanation for state 85"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/463/mastermind_state-84.png" alt="Performance explanation for state 85"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/463/mastermind_state-84.png" alt="Outcome explanation for state 85"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/463/mastermind_state-84.png" alt="Prediction explanation for state 85"></td>
 </tr>
 </table>
@@ -2570,7 +2570,7 @@ Please note that the state indices are for navigational purposes only and do not
 <table>
 <tr>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/behaviour/463/mastermind_state-85.png" alt="Behaviour explanation for state 86"></td>
-<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_performance/463/mastermind_state-85.png" alt="Performance explanation for state 86"></td>
+<td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/offpolicy_outcome/463/mastermind_state-85.png" alt="Outcome explanation for state 86"></td>
 <td valign="top" align="center"><img src="./shapleys/plots/mastermind_explanations/prediction/463/mastermind_state-85.png" alt="Prediction explanation for state 86"></td>
 </tr>
 </table>

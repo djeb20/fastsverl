@@ -20,8 +20,8 @@ IMG_EXTENSION = ".png"
 # Maps the explanation names in DOMAIN_CONFIG to your image sub-directory names
 IMG_DIR_MAP = {
     "Behaviour": "behaviour",
-    "Performance": "offpolicy_performance",
-    "Performance (On-Policy)": "onpolicy_performance",
+    "Outcome": "offpolicy_outcome",
+    "Outcome (On-Policy)": "onpolicy_outcome",
     "Prediction": "prediction"
 }
 
@@ -30,13 +30,13 @@ IMG_DIR_MAP = {
 # by counting images in the "Behaviour" sub-directory.
 DOMAIN_CONFIG = {
     "Mastermind-443": {
-        "explanation_names": ["Behaviour", "Performance", "Prediction"]
+        "explanation_names": ["Behaviour", "Outcome", "Prediction"]
     },
     "Mastermind-453": {
-        "explanation_names": ["Behaviour", "Performance", "Prediction"]
+        "explanation_names": ["Behaviour", "Outcome", "Prediction"]
     },
     "Mastermind-463": {
-        "explanation_names": ["Behaviour", "Performance", "Prediction"]
+        "explanation_names": ["Behaviour", "Outcome", "Prediction"]
     },
 }
 
@@ -51,7 +51,7 @@ Mastermind is a code-breaking game where, in these versions, an agent must guess
 
 ## How to Read the Visualisations
 
-For each state, three explanation types are shown side-by-side: *Behaviour*, *Performance*, and *Prediction*. The colour of each cell on the board represents its relative Shapley value, which indicates the feature's contribution to the explanation type. **For clarity, the Shapley values in all figures are normalised to sit between -1 and 1.**
+For each state, three explanation types are shown side-by-side: *Behaviour*, *Outcome*, and *Prediction*. The colour of each cell on the board represents its relative Shapley value, which indicates the feature's contribution to the explanation type. **For clarity, the Shapley values in all figures are normalised to sit between -1 and 1.**
 
 * *Blue* cells indicate a *positive* contribution.
 * *Red* cells indicate a *negative* contribution.

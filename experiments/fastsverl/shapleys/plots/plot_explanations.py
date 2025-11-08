@@ -60,20 +60,21 @@ class ExpArgs:
     num_envs: int = 1
     """the number of parallel game environments"""
 
-agent_args_fs = ['1_1753520362364993335', '1_1753520364367597552', '1_1753520366370971122']
+# Run names and corresponding agent args folders
+agent_args_fs = [None, None, None]  # Fill in with actual agent args folder names if needed
 
 explanations = {
-    'Behaviour': ["1_1754327171814823512", "1_1754327664370701736", "1_1754328163819393596"],
-    'Prediction': ["1_1757524448855916224", "1_1757527102146519022", "1_1757529730632057966"],
-    'OnPolicy_Performance': ["1_1757851984212157174", "1_1757852799250560205", "1_1757853893495242171"], # On-Policy
-    'OffPolicy_Performance': ["1_1757852311860287719", "1_1757853130928613104", "1_1757854221711682627"] # Off-Policy
+    'Behaviour': [None, None, None],  # Fill in with actual run names for Behaviour explanations
+    'Prediction': [None, None, None],  # Fill in with actual run names for Prediction explanations
+    'OnPolicy_Outcome': [None, None, None],  # Fill in with actual run names for On-Policy Outcome explanations
+    'OffPolicy_Outcome': [None, None, None]  # Fill in with actual run names for Off-Policy Outcome explanations
 }
 
 title_dict = {
     'Behaviour': 'Behaviour',
     'Prediction': 'Prediction',
-    'OnPolicy_Performance': 'On-Policy Performance',
-    'OffPolicy_Performance': 'Off-Policy Performance'
+    'OnPolicy_Outcome': 'On-Policy Outcome',
+    'OffPolicy_Outcome': 'Off-Policy Outcome'
 }
 
 for explanation, run_names in explanations.items():
@@ -105,6 +106,9 @@ for explanation, run_names in explanations.items():
             fig, ax = plt.subplots(1, 1, figsize=(4, 4))
             fontsize = 15
 
+            # This will store action info if we are plotting a Behaviour explanation
+            action_info = None 
+
             # Behaviour explanation has shapley values for each action.
             if explanation == 'Behaviour':
                 # Get the action for the state
@@ -112,6 +116,19 @@ for explanation, run_names in explanations.items():
 
                 # Get the numerical index of the guess in the state.
                 sv = sv[:, action]
+                
+                # Find the row index for the action (first non-filled guess)
+                # We use the original 1D 'state' here before it's reshaped
+                guess_idx = np.where(np.array(state) == -1)[0][0] // (env_args.code_size + 2)
+                
+                # Account for np.flipud by reversing the index
+                flipped_guess_idx = env_args.num_guesses - 1 - guess_idx
+                
+                # Get the action as letters
+                action_as_letters = [move_dict[val] for val in envs.envs[0].unwrapped.index_to_guess[action]]
+                
+                # Store info for plotting
+                action_info = {'row': flipped_guess_idx, 'letters': action_as_letters}                
 
             # Reshape Shapley values and account for numerical errors with steady-state approximation.
             shapley_values = np.flipud(np.reshape(sv, (env_args.num_guesses, env_args.code_size + 2)))#.round(2)
@@ -136,6 +153,16 @@ for explanation, run_names in explanations.items():
                         ha="center", va="center", 
                         color=textcolors[int(abs(shapley_values[k, j]) > 1/2)],
                         fontweight="bold", fontsize=fontsize)
+                    
+            # If this is a behaviour explanation, overlay the action
+            if action_info:
+                action_row = action_info['row']
+                action_letters = action_info['letters']
+                # Action letters go in columns 1 to code_size (e.g., j+1)
+                for j, letter in enumerate(action_letters):
+                    ax.text(j + 1, action_row, letter,
+                            ha="center", va="center", color="#16bd31", # Color from your 2nd example
+                            fontweight="bold", fontsize=fontsize)
 
             # Remove tickmarks
             ax.tick_params(labelbottom=False, bottom=False, labelleft=False, left=False)
@@ -163,5 +190,5 @@ for explanation, run_names in explanations.items():
 
             # Save the figure
             os.makedirs(f'mastermind_explanations/{explanation.lower()}/{env_args.code_size}{env_args.num_guesses}{env_args.num_pegs}', exist_ok=True)
-            plt.savefig(f'mastermind_explanations/{explanation.lower()}/{env_args.code_size}{env_args.num_guesses}{env_args.num_pegs}/mastermind_state-{state_idx}.png', bbox_inches='tight', transparent=True)
+            plt.savefig(f'mastermind_explanations/{explanation.lower()}/{env_args.code_size}{env_args.num_guesses}{env_args.num_pegs}/mastermind_state-{state_idx}.png', bbox_inches='tight')
             plt.close(fig)
